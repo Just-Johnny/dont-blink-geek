@@ -1,0 +1,12 @@
+#General
+.github
+
+# Node
+node_modules
+
+## Operating Systems
+Thumbs.db
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
