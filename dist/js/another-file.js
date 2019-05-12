@@ -1,5 +1,5 @@
 /*!
- * dont-blink-geek v0.0.1
+ * dont-blink-geek v1.0.0
  * Website for Don't Blink Geek.
  * (c) 2019 John Burks
  * MIT License

@@ -79,7 +79,6 @@ var minify = require('gulp-cssnano');
 
 // Images
 var imagemin = require('gulp-imagemin');
-var changed = require('gulp-changed');
 
 // BrowserSync
 var newer = require('gulp-newer');
@@ -165,6 +164,10 @@ var buildStyles = function (done) {
 
   // Run tasks on all Sass files
   return src(paths.styles.input)
+    .pipe(newer({
+      dest: 'dist/css/',
+      ext: '.css'
+    }))
     .pipe(sass({
       outputStyle: 'expanded',
       sourceComments: true
@@ -200,8 +203,10 @@ var buildImages = function (done) {
 
   //Run image scripts
   return src(paths.images.input)
-    .pipe(changed(paths.images.output))
-    //.pipe(ngAnnotate())
+    .pipe(newer({
+      dest: 'dist/img/',
+      ext: '*.{jpg,gif,png,jpeg,svg}'
+    }))
     .pipe(imagemin([
       imagemin.gifsicle({
         interlaced: true
