@@ -2,11 +2,14 @@
  * @section Base Styles
  */
 
+html,
 body {
-	font-size: 125%;
-	margin: 0 auto;
-	max-width: 42em;
-	width: 88%;
+	box-sizing: border-box;
+	background: $color-cream;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
 }
 
 input,
@@ -14,4 +17,86 @@ textarea,
 select,
 button {
 	font: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.responsive-img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Fonts */
+h1,
+h2,
+h3 {
+	font-family: 'Passion One', sans-serif;
+	letter-spacing: 2px;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 3.4rem;
+	padding: 0 30px;
+}
+
+h2 {
+	font-size: 2.2rem;
+	padding: 0 30px;
+}
+
+h3 {
+	font-size: 1.8rem;
+	padding: 0;
+	margin: 0;
+}
+
+p,
+ul,
+ol {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.2rem;
+}
+
+/* Grid */
+
+.menu,
+.social,
+.copyright,
+.acknowledgements {
+	background: $color-charcoal;
+}
+
+.connect h2,
+.build h2 {
+	color: $color-cream;
+}
+
+.connect {
+	background: $color-dark-red;
+}
+
+.build {
+	background: $color-light-blue;
+}
+
+.connect-intro,
+.build {
+	text-align: center;
+}
+
+.connect h3 {
+	text-transform: uppercase;
+	color: $color-blue-denim;
+}
+
+.connect-logos,
+.build-logos {
+	padding-bottom: 2rem;
+}
+
+.build-logos img {
+	max-width: 80%;
 }

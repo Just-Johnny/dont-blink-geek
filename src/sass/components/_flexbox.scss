@@ -1,0 +1,29 @@
+/* Flexbox internal grid objects */
+.header-block-left,
+.header-block-right,
+.gen-flex-left,
+.gen-flex-right,
+.connect,
+.build,
+.connect-logos span,
+.build-logos span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen-flex-left,
+.gen-flex-right {
+    margin: 0 auto;
+    max-width: 600px;
+    flex-direction: column;
+
+}
+
+.gen-flex-left {
+    text-align: center;
+}
+
+.header-block-left {
+    padding: 2rem 0;
+}

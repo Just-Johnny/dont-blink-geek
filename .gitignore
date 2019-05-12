@@ -1,5 +1,6 @@
 #General
 .github
+netlify.toml
 
 # Node
 node_modules

@@ -64,6 +64,7 @@ var lazypipe = require('lazypipe');
 var rename = require('gulp-rename');
 var header = require('gulp-header');
 var package = require('./package.json');
+var ngAnnotate = require('gulp-ng-annotate');
 
 // Scripts
 var jshint = require('gulp-jshint');
@@ -78,8 +79,10 @@ var minify = require('gulp-cssnano');
 
 // Images
 var imagemin = require('gulp-imagemin');
+var changed = require('gulp-changed');
 
 // BrowserSync
+var newer = require('gulp-newer');
 var browserSync = require('browser-sync');
 
 // Gulp Tasks
@@ -197,6 +200,8 @@ var buildImages = function (done) {
 
   //Run image scripts
   return src(paths.images.input)
+    .pipe(changed(paths.images.output))
+    //.pipe(ngAnnotate())
     .pipe(imagemin([
       imagemin.gifsicle({
         interlaced: true
@@ -276,6 +281,9 @@ exports.default = series(
 
 // Watch and reload
 // gulp watch
+
+// Gulp watchlist
+
 exports.watch = series(
   exports.default,
   startServer,

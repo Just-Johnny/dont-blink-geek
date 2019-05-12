@@ -1,0 +1,28 @@
+/* Header */
+.bg-header-left {
+    background: $color-deep-red;
+}
+
+.bg-header-right {
+    background-color: $color-blue-denim;
+    background-image: url('../img/img-houston-skyline.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.bg-header-left-block,
+.bg-header-right-block {
+    width: 100%;
+}
+
+.bg-header-right-block {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-header-right-block h1 {
+    color: $color-cream;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Body Content */

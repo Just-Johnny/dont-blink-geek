@@ -3,8 +3,7 @@
 
 
 **Requirements**
-Node.js
-Gulp 4
+Node.js, npm, Gulp 4.x
 
 **Features**
 
