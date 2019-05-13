@@ -12,14 +12,6 @@
 
 @media only screen and (min-width: 1390px) {
 
-    .gen-flex-left,
-    .gen-flex-right {
-        margin: 0 auto;
-        max-width: 600px;
-        flex-direction: column;
-
-    }
-
     .header-block-left,
     .header-block-right {
         grid-column: span 1;

@@ -1,0 +1,42 @@
+.gen-nav-left nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+
+    a {
+        font-size: 1.5rem;
+        margin: 20px;
+        text-decoration: none;
+        color: #95a5a6;
+        border-bottom: none;
+        transition: color 0.5s ease-out;
+    }
+
+    a:hover {
+        color: #3498db;
+        border-bottom-color: #3498db;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .gen-nav-left nav {
+        justify-content: center;
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .gen-nav-left nav {
+        align-items: center;
+    }
+
+}

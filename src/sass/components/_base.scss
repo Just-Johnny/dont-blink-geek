@@ -60,6 +60,10 @@ ol {
 	font-size: 1.2rem;
 }
 
+ul {
+	list-style-type: none;
+}
+
 /* Grid */
 
 .menu,
@@ -67,6 +71,60 @@ ol {
 .copyright,
 .acknowledgements {
 	background: $color-charcoal;
+}
+
+.featured-article,
+.featured-article-list,
+.blog-article {
+	padding: 3rem 0;
+}
+
+.featured-article-content,
+.featured-article-list,
+.article-content {
+	.article-right {
+		padding: 0 0 0 2rem;
+	}
+
+	h1,
+	h2 {
+		padding: 0;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	h1,
+	h2,
+	p,
+	ul,
+	ol {
+		color: $color-rust;
+	}
+
+	h3 {
+		color: $color-charcoal;
+	}
+
+	a.continue,
+	a.continue:visited,
+	a.continue:active,
+	.date {
+		color: $color-cream;
+		margin: 0;
+		padding: 0;
+	}
+
+	a.continue,
+	a.continue:visited,
+	a.continue:active,
+	.date {
+		display: inline-block;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		background: $color-charcoal;
+	}
 }
 
 .connect h2,
