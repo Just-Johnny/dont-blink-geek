@@ -79,6 +79,10 @@ ul {
 	padding: 3rem 0;
 }
 
+.featured-article img {
+	margin-bottom: 1rem;
+}
+
 .featured-article-content,
 .featured-article-list,
 .article-content {
@@ -95,13 +99,16 @@ ul {
 
 	h1,
 	h2,
+	a,
+	a:visited,
+	a:active {
+		color: $color-blue-denim;
+	}
+
+	h3,
 	p,
 	ul,
 	ol {
-		color: $color-rust;
-	}
-
-	h3 {
 		color: $color-charcoal;
 	}
 
@@ -128,7 +135,8 @@ ul {
 }
 
 .connect h2,
-.build h2 {
+.build h2,
+.connect h3 {
 	color: $color-cream;
 }
 
@@ -147,7 +155,6 @@ ul {
 
 .connect h3 {
 	text-transform: uppercase;
-	color: $color-blue-denim;
 }
 
 .connect-logos,

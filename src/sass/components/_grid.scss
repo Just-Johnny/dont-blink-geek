@@ -6,7 +6,7 @@
 header,
 .featured-article,
 .article-listing,
-.featured-article-list article,
+article,
 .content-home,
 footer {
     display: grid;
@@ -64,9 +64,9 @@ header {
     grid-column: span 12;
 }
 
-.featured-article-list article {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+article {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     grid-column: span 6;
 }
 
