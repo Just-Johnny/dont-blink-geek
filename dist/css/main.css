@@ -432,6 +432,7 @@ template {
 .container,
 .navigation,
 header,
+.video-wrapper,
 .featured-article,
 .article-listing,
 article,
@@ -441,7 +442,7 @@ footer {
   grid-gap: 5px;
 }
 
-/* line 16, src/sass/components/_grid.scss */
+/* line 17, src/sass/components/_grid.scss */
 .container {
   height: 100%;
   grid-template-rows: 80px 1fr 1fr 1fr 80px;
@@ -449,40 +450,48 @@ footer {
 }
 
 /* HEADER GRID */
-/* line 24, src/sass/components/_grid.scss */
+/* line 25, src/sass/components/_grid.scss */
 .navigation {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column: span 12;
 }
 
-/* line 30, src/sass/components/_grid.scss */
+/* line 31, src/sass/components/_grid.scss */
 header {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column: span 12;
 }
 
-/* line 36, src/sass/components/_grid.scss */
+/* line 37, src/sass/components/_grid.scss */
 .menu {
   grid-column: span 2;
 }
 
-/* line 40, src/sass/components/_grid.scss */
+/* line 41, src/sass/components/_grid.scss */
 .header-block-left,
 .header-block-right {
   grid-column: span 2;
 }
 
-/* Body Content */
+/* Video Background */
 /* line 47, src/sass/components/_grid.scss */
+.video-wrapper {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-column: span 12;
+}
+
+/* Body Content */
+/* line 55, src/sass/components/_grid.scss */
 .featured-article {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 70% 1fr;
   grid-column: span 12;
 }
 
-/* line 53, src/sass/components/_grid.scss */
+/* line 61, src/sass/components/_grid.scss */
 .content-home {
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
@@ -490,14 +499,14 @@ header {
 }
 
 /* Blog Archive & Post Grid */
-/* line 61, src/sass/components/_grid.scss */
+/* line 69, src/sass/components/_grid.scss */
 .article-listing {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 70% 1fr;
   grid-column: span 12;
 }
 
-/* line 67, src/sass/components/_grid.scss */
+/* line 75, src/sass/components/_grid.scss */
 article {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr;
@@ -505,50 +514,50 @@ article {
 }
 
 /* Social Grid */
-/* line 75, src/sass/components/_grid.scss */
+/* line 83, src/sass/components/_grid.scss */
 .connect,
 .build {
   grid-column: span 2;
 }
 
-/* line 80, src/sass/components/_grid.scss */
+/* line 88, src/sass/components/_grid.scss */
 .connect-logos,
 .build-logos {
   display: grid;
 }
 
-/* line 85, src/sass/components/_grid.scss */
+/* line 93, src/sass/components/_grid.scss */
 .connect-logos {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
 
-/* line 90, src/sass/components/_grid.scss */
+/* line 98, src/sass/components/_grid.scss */
 .logo-linkedin {
   grid-column: span 2;
 }
 
-/* line 94, src/sass/components/_grid.scss */
+/* line 102, src/sass/components/_grid.scss */
 .build-logos {
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
 }
 
-/* line 100, src/sass/components/_grid.scss */
+/* line 108, src/sass/components/_grid.scss */
 .logo-gulp {
   grid-row: span 3;
 }
 
 /* Footer Grid */
-/* line 106, src/sass/components/_grid.scss */
+/* line 114, src/sass/components/_grid.scss */
 footer {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column: span 12;
 }
 
-/* line 112, src/sass/components/_grid.scss */
+/* line 120, src/sass/components/_grid.scss */
 .copyright,
 .acknowledgements {
   grid-column: span 1;
@@ -891,6 +900,20 @@ ul {
 }
 
 /* Body Content */
+/* line 1, src/sass/components/_video.scss */
+.video-wrapper {
+  position: relative;
+}
+
+/* line 5, src/sass/components/_video.scss */
+.video-wrapper video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: auto;
+}
+
 /* line 1, src/sass/components/_menus.scss */
 .gen-nav-left nav {
   display: -webkit-box;

@@ -4,6 +4,7 @@
 .container,
 .navigation,
 header,
+.video-wrapper,
 .featured-article,
 .article-listing,
 article,
@@ -40,6 +41,13 @@ header {
 .header-block-left,
 .header-block-right {
     grid-column: span 2;
+}
+
+/* Video Background */
+.video-wrapper {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-column: span 12;
 }
 
 /* Body Content */

@@ -1,0 +1,11 @@
+.video-wrapper {
+    position: relative;
+}
+
+.video-wrapper video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: auto;
+}
