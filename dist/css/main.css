@@ -106,10 +106,11 @@ video {
   margin: 0;
   font-size: 1.6rem;
   overflow-x: hidden;
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 101, src/sass/components/_reset.scss */
+/* line 102, src/sass/components/_reset.scss */
 article,
 aside,
 details,
@@ -124,24 +125,24 @@ section {
   display: block;
 }
 
-/* line 115, src/sass/components/_reset.scss */
+/* line 116, src/sass/components/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 119, src/sass/components/_reset.scss */
+/* line 120, src/sass/components/_reset.scss */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 124, src/sass/components/_reset.scss */
+/* line 125, src/sass/components/_reset.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 129, src/sass/components/_reset.scss */
+/* line 130, src/sass/components/_reset.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -150,7 +151,7 @@ q:after {
   content: none;
 }
 
-/* line 137, src/sass/components/_reset.scss */
+/* line 138, src/sass/components/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
