@@ -1,75 +1,42 @@
-@media only screen and (min-width: 768px) {
-    .content-home {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .connect,
-    .build {
-        grid-column: span 1;
+/* 768 and up */
+@media screen and (min-width: 767px) {
+    .block--services__list {
+        grid-template: repeat(3, auto) / repeat(2, 1fr);
     }
 }
 
-@media only screen and (min-width: 1200px) {}
-
-@media only screen and (min-width: 1390px) {
-
-    .header-block-left,
-    .header-block-right {
-        grid-column: span 1;
+/* 1024 and up */
+@media screen and (min-width: 1023px) {
+    .hipster-dood {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 40;
     }
 
-    .header-block-left {
-        padding: 0;
+    .logo {
+        grid-column: 2;
+        grid-row: 2;
     }
 
-    header {
-        grid-template-rows: 600px;
+    .hipster-chic {
+        grid-column: 3;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 40;
+    }
+
+    .portfolio {
         grid-template-columns: 1fr 1fr;
     }
-
-    .bg-header-left-block,
-    .bg-header-right-block {
-        width: 540px;
-    }
-
-    .content-home {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .build-logos {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0em;
-    }
-
-    article {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-column: span 6;
-    }
-
-    .blog-article article {
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr;
-        grid-column: span 6;
-    }
-
 }
 
-@media only screen and (min-width: 2200px) {
-    header {
-        grid-template-rows: 460px 520px;
-    }
-
-    .header-block-left,
-    .header-block-right {
-        grid-column: span 2;
-    }
-
-    .connect,
-    .build {
-        grid-column: span 2;
+@media screen and (min-width: 1383px) {
+    .block--services__list {
+        grid-template: repeat(2, auto) / repeat(3, 1fr);
     }
 }
