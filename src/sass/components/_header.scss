@@ -1,28 +1,81 @@
 /* Header */
-.bg-header-left {
-    background: $color-deep-red;
+
+header {
+    min-height: 100vh;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr 50px 60px;
 }
 
-.bg-header-right {
-    background-color: $color-blue-denim;
-    background-image: url('../img/img-houston-skyline.png');
-    background-repeat: no-repeat;
-    background-position: bottom center;
+.hipster-dood {
+    display: none;
 }
 
-.bg-header-left-block,
-.bg-header-right-block {
-    width: 100%;
+.divider,
+.divider--alt {
+    grid-column: 1 / span 3;
+    background: url('/img/img-color-lines__bg.jpg');
+    background-size: cover;
+    height: 60px;
 }
 
-.bg-header-right-block {
-    background-color: rgba(0, 0, 0, 0.7);
+.divider {
+    grid-row: 1;
 }
 
-.bg-header-right-block h1 {
-    color: $color-cream;
-    text-align: center;
-    text-transform: uppercase;
+.divider--alt {
+    grid-row: 4;
 }
 
-/* Body Content */
+.divider {
+    box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
+}
+
+.divider--alt {
+    box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    position: relative;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    flex-direction: column;
+    max-width: 1260px;
+    padding: 0 50px;
+
+    h1,
+    p {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        color: #007d9f;
+        font-size: 6rem;
+        padding-top: 0;
+
+    }
+
+    p {
+        color: #000;
+        font-size: 2rem;
+    }
+}
+
+.hipster-chic {
+    display: none;
+}
+
+h1 .fa-search {
+    font-size: 4.4rem;
+    color: #007d9f;
+}
