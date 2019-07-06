@@ -163,11 +163,19 @@ table {
   .block--services__list {
     grid-template: repeat(3, auto)/repeat(2, 1fr);
   }
+  /* line 7, src/sass/components/_queries.scss */
+  .logo h1 {
+    font-size: 6rem;
+  }
+  /* line 11, src/sass/components/_queries.scss */
+  h1 .fa-search {
+    font-size: 4.4rem;
+  }
 }
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 10, src/sass/components/_queries.scss */
+  /* line 18, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 2;
@@ -182,12 +190,12 @@ table {
             justify-content: center;
     z-index: 40;
   }
-  /* line 19, src/sass/components/_queries.scss */
+  /* line 27, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
     grid-row: 2;
   }
-  /* line 24, src/sass/components/_queries.scss */
+  /* line 32, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 2;
@@ -202,14 +210,14 @@ table {
             justify-content: center;
     z-index: 40;
   }
-  /* line 33, src/sass/components/_queries.scss */
+  /* line 41, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 39, src/sass/components/_queries.scss */
+  /* line 47, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
@@ -621,7 +629,7 @@ header {
 /* line 62, src/sass/components/_header.scss */
 .logo h1 {
   color: #007d9f;
-  font-size: 6rem;
+  font-size: 3rem;
   padding-top: 0;
 }
 
@@ -638,7 +646,7 @@ header {
 
 /* line 79, src/sass/components/_header.scss */
 h1 .fa-search {
-  font-size: 4.4rem;
+  font-size: 2.4rem;
   color: #007d9f;
 }
 
@@ -648,11 +656,19 @@ h1 .fa-search {
   .block--services__list {
     grid-template: repeat(3, auto)/repeat(2, 1fr);
   }
+  /* line 7, src/sass/components/_queries.scss */
+  .logo h1 {
+    font-size: 6rem;
+  }
+  /* line 11, src/sass/components/_queries.scss */
+  h1 .fa-search {
+    font-size: 4.4rem;
+  }
 }
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 10, src/sass/components/_queries.scss */
+  /* line 18, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 2;
@@ -667,12 +683,12 @@ h1 .fa-search {
             justify-content: center;
     z-index: 40;
   }
-  /* line 19, src/sass/components/_queries.scss */
+  /* line 27, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
     grid-row: 2;
   }
-  /* line 24, src/sass/components/_queries.scss */
+  /* line 32, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 2;
@@ -687,14 +703,14 @@ h1 .fa-search {
             justify-content: center;
     z-index: 40;
   }
-  /* line 33, src/sass/components/_queries.scss */
+  /* line 41, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 39, src/sass/components/_queries.scss */
+  /* line 47, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }

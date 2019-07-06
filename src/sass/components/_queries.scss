@@ -3,6 +3,14 @@
     .block--services__list {
         grid-template: repeat(3, auto) / repeat(2, 1fr);
     }
+
+    .logo h1 {
+        font-size: 6rem;
+    }
+
+    h1 .fa-search {
+        font-size: 4.4rem;
+    }
 }
 
 /* 1024 and up */
