@@ -540,7 +540,8 @@ section.margin__remove {
 /* Header */
 /* line 3, src/sass/components/_header.scss */
 header {
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -550,12 +551,12 @@ header {
   grid-template-rows: 50px 1fr 50px 60px;
 }
 
-/* line 14, src/sass/components/_header.scss */
+/* line 15, src/sass/components/_header.scss */
 .hipster-dood {
   display: none;
 }
 
-/* line 18, src/sass/components/_header.scss */
+/* line 19, src/sass/components/_header.scss */
 .divider,
 .divider--alt {
   grid-column: 1 / span 3;
@@ -564,29 +565,29 @@ header {
   height: 60px;
 }
 
-/* line 26, src/sass/components/_header.scss */
+/* line 27, src/sass/components/_header.scss */
 .divider {
   grid-row: 1;
 }
 
-/* line 30, src/sass/components/_header.scss */
+/* line 31, src/sass/components/_header.scss */
 .divider--alt {
   grid-row: 4;
 }
 
-/* line 34, src/sass/components/_header.scss */
+/* line 35, src/sass/components/_header.scss */
 .divider {
   -webkit-box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 38, src/sass/components/_header.scss */
+/* line 39, src/sass/components/_header.scss */
 .divider--alt {
   -webkit-box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 42, src/sass/components/_header.scss */
+/* line 43, src/sass/components/_header.scss */
 .logo {
   grid-column: 1 / span 3;
   grid-row: 2;
@@ -610,32 +611,32 @@ header {
   padding: 0 50px;
 }
 
-/* line 55, src/sass/components/_header.scss */
+/* line 56, src/sass/components/_header.scss */
 .logo h1,
 .logo p {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 61, src/sass/components/_header.scss */
+/* line 62, src/sass/components/_header.scss */
 .logo h1 {
   color: #007d9f;
   font-size: 6rem;
   padding-top: 0;
 }
 
-/* line 68, src/sass/components/_header.scss */
+/* line 69, src/sass/components/_header.scss */
 .logo p {
   color: #000;
   font-size: 2rem;
 }
 
-/* line 74, src/sass/components/_header.scss */
+/* line 75, src/sass/components/_header.scss */
 .hipster-chic {
   display: none;
 }
 
-/* line 78, src/sass/components/_header.scss */
+/* line 79, src/sass/components/_header.scss */
 h1 .fa-search {
   font-size: 4.4rem;
   color: #007d9f;
