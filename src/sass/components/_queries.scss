@@ -11,6 +11,41 @@
     h1 .fa-search {
         font-size: 4.4rem;
     }
+
+    header {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        padding: 0;
+    }
+
+    .divider,
+    .divider--alt {
+        display: block;
+        grid-column: 1 / span 3;
+        background: url('/img/img-color-lines__bg.jpg');
+        background-size: cover;
+        height: 60px;
+    }
+
+    .divider {
+        grid-row: 1;
+    }
+
+    .divider--alt {
+        grid-row: 4;
+    }
+
+    .divider {
+        box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
+    }
+
+    .divider--alt {
+        box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
+    }
+
+    .services--head {
+        padding-top: 15rem;
+    }
 }
 
 /* 1024 and up */
