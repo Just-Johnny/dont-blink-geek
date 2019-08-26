@@ -1,11 +1,3 @@
-/*!
- * dont-blink-geek v1.0.0
- * Website for Don't Blink Geek.
- * (c) 2019 John Burks
- * MIT License
- * https://github.com/Just-Johnny/dont-blink-geek
- */
-
 /**
  * Full Background Video
  *
@@ -61,13 +53,13 @@
 
       // Fired when enough has been buffered to begin the video
       // self.videoEl.readyState === 4 (HAVE_ENOUGH_DATA)
-      self.videoEl.addEventListener('canplay', (function () {
+      self.videoEl.addEventListener('canplay', function () {
         // Play the video when enough has been buffered
         if (!self.opt.isMobile) {
           self.opt.onLoad && self.opt.onLoad();
           if (self.opt.autoplay !== false) self.videoEl.play();
         }
-      }));
+      });
 
       // If resizing is required (resize video as window/container resizes)
       if (self.opt.resize) {
@@ -78,7 +70,7 @@
       this.startTime = (new Date()).getTime();
 
       // Create `source` for video
-      this.opt.src.forEach((function (srcOb, i, arr) {
+      this.opt.src.forEach(function (srcOb, i, arr) {
         var key
           , val
           , source = document.createElement('source');
@@ -93,31 +85,31 @@
         }
 
         self.videoEl.appendChild(source);
-      }));
+      });
 
       if (self.opt.isMobile) {
         if (self.opt.playButton) {
-          self.opt.videoEl.addEventListener('timeupdate', (function () {
+          self.opt.videoEl.addEventListener('timeupdate', function () {
             if (!self.onLoadCalled) {
               self.opt.onLoad && self.opt.onLoad();
               self.onLoadCalled = true;
             }
-          }));
+          });
 
 
-          self.opt.playButton.addEventListener('click', (function () {
+          self.opt.playButton.addEventListener('click', function () {
             self.opt.pauseButton.style.display = 'inline-block';
             this.style.display = 'none';
 
             self.videoEl.play();
-          }), false);
+          }, false);
 
-          self.opt.pauseButton.addEventListener('click', (function () {
+          self.opt.pauseButton.addEventListener('click', function () {
             this.style.display = 'none';
             self.opt.playButton.style.display = 'inline-block';
 
             self.videoEl.pause();
-          }), false);
+          }, false);
         }
       }
 
@@ -198,71 +190,3 @@
   };
 
 }(window));
-
-document.addEventListener('click', (function (event) {
-	if (!event.target.matches('#click-me')) return;
-	alert('You clicked me!');
-}), false);
-const appearOptions = {
-    threshold: 0.15,
-    rootMargin: "50px 0px 0px 0px"
-  };
-  
-  const appearOnScroll = new IntersectionObserver(function(
-    entries,
-    appearOnScroll
-  ) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
-      }
-    });
-  },
-  appearOptions);
-  
-  const fadeIn = document.querySelectorAll(".fade--in__one, .fade--in__two, .fade--in__three");
-  fadeIn.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
-(function () {
-
-  var bv = new Bideo();
-  bv.init({
-    // Video element
-    videoEl: document.querySelector('#background_video'),
-
-    // Container element
-    container: document.querySelector('body'),
-
-    // Resize
-    resize: true,
-
-    // autoplay: false,
-
-    isMobile: window.matchMedia('(max-width: 768px)').matches,
-
-    playButton: document.querySelector('#play'),
-    pauseButton: document.querySelector('#pause'),
-
-    // Array of objects containing the src and type
-    // of different video formats to add
-    src: [
-      {
-        src: '/video/retro-wave-loop.mp4',
-        type: 'video/mp4'
-      },
-      //{
-      //  src: 'night.webm',
-      //  type: 'video/webm;codecs="vp8, vorbis"'
-      //}
-    ],
-
-    // What to do once video loads (initial frame)
-    onLoad: function () {
-      document.querySelector('#video_cover').style.display = 'none';
-    }
-  });
-}());

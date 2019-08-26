@@ -11,3 +11,5 @@ Thumbs.db
 ._*
 .Spotlight-V100
 .Trashes
+dist/v1/
+src/copy/v1/

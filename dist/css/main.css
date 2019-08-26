@@ -157,109 +157,6 @@ table {
   border-spacing: 0;
 }
 
-/* 768 and up */
-@media screen and (min-width: 767px) {
-  /* line 3, src/sass/components/_queries.scss */
-  .block--services__list {
-    grid-template: repeat(3, auto)/repeat(2, 1fr);
-  }
-  /* line 7, src/sass/components/_queries.scss */
-  .logo h1 {
-    font-size: 6rem;
-  }
-  /* line 11, src/sass/components/_queries.scss */
-  h1 .fa-search {
-    font-size: 4.4rem;
-  }
-  /* line 15, src/sass/components/_queries.scss */
-  header {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    padding: 0;
-  }
-  /* line 21, src/sass/components/_queries.scss */
-  .divider,
-  .divider--alt {
-    display: block;
-    grid-column: 1 / span 3;
-    background: url("/img/img-color-lines__bg.jpg");
-    background-size: cover;
-    height: 60px;
-  }
-  /* line 30, src/sass/components/_queries.scss */
-  .divider {
-    grid-row: 1;
-  }
-  /* line 34, src/sass/components/_queries.scss */
-  .divider--alt {
-    grid-row: 4;
-  }
-  /* line 38, src/sass/components/_queries.scss */
-  .divider {
-    -webkit-box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
-            box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
-  }
-  /* line 42, src/sass/components/_queries.scss */
-  .divider--alt {
-    -webkit-box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
-            box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
-  }
-  /* line 46, src/sass/components/_queries.scss */
-  .services--head {
-    padding-top: 15rem;
-  }
-}
-
-/* 1024 and up */
-@media screen and (min-width: 1023px) {
-  /* line 53, src/sass/components/_queries.scss */
-  .hipster-dood {
-    grid-column: 1;
-    grid-row: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 40;
-  }
-  /* line 62, src/sass/components/_queries.scss */
-  .logo {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  /* line 67, src/sass/components/_queries.scss */
-  .hipster-chic {
-    grid-column: 3;
-    grid-row: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 40;
-  }
-  /* line 76, src/sass/components/_queries.scss */
-  .portfolio {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1383px) {
-  /* line 82, src/sass/components/_queries.scss */
-  .block--services__list {
-    grid-template: repeat(2, auto)/repeat(3, 1fr);
-  }
-}
-
 /* line 1, src/sass/components/_base.scss */
 h1,
 h2,
@@ -427,13 +324,13 @@ section.margin__remove {
 
 /* Service Blocks */
 /* line 143, src/sass/components/_base.scss */
-.services--head {
+.section--head {
   padding-top: 5rem;
 }
 
 /* line 147, src/sass/components/_base.scss */
 .services {
-  background: #002342;
+  /* background: #002342; */
   padding: 8rem 0;
 }
 
@@ -497,7 +394,7 @@ section.margin__remove {
 
 /* line 202, src/sass/components/_base.scss */
 .block--services__item h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   line-height: normal;
 }
@@ -664,21 +561,33 @@ h1 .fa-search {
   .block--services__list {
     grid-template: repeat(3, auto)/repeat(2, 1fr);
   }
-  /* line 7, src/sass/components/_queries.scss */
+  /* line 6, src/sass/components/_queries.scss */
+  .video--wrapper {
+    height: 200vh;
+  }
+  /* line 9, src/sass/components/_queries.scss */
+  #background_video {
+    height: 200vh;
+  }
+  /* line 12, src/sass/components/_queries.scss */
+  #overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* line 15, src/sass/components/_queries.scss */
   .logo h1 {
     font-size: 6rem;
   }
-  /* line 11, src/sass/components/_queries.scss */
+  /* line 19, src/sass/components/_queries.scss */
   h1 .fa-search {
     font-size: 4.4rem;
   }
-  /* line 15, src/sass/components/_queries.scss */
+  /* line 23, src/sass/components/_queries.scss */
   header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 21, src/sass/components/_queries.scss */
+  /* line 29, src/sass/components/_queries.scss */
   .divider,
   .divider--alt {
     display: block;
@@ -687,33 +596,37 @@ h1 .fa-search {
     background-size: cover;
     height: 60px;
   }
-  /* line 30, src/sass/components/_queries.scss */
+  /* line 38, src/sass/components/_queries.scss */
   .divider {
     grid-row: 1;
   }
-  /* line 34, src/sass/components/_queries.scss */
+  /* line 42, src/sass/components/_queries.scss */
   .divider--alt {
     grid-row: 4;
   }
-  /* line 38, src/sass/components/_queries.scss */
+  /* line 46, src/sass/components/_queries.scss */
   .divider {
     -webkit-box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
   }
-  /* line 42, src/sass/components/_queries.scss */
+  /* line 50, src/sass/components/_queries.scss */
   .divider--alt {
     -webkit-box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
   }
-  /* line 46, src/sass/components/_queries.scss */
-  .services--head {
+  /* line 54, src/sass/components/_queries.scss */
+  .section--head {
     padding-top: 15rem;
+  }
+  /* line 57, src/sass/components/_queries.scss */
+  .block--services__item h3 {
+    font-size: 2rem;
   }
 }
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 53, src/sass/components/_queries.scss */
+  /* line 64, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 2;
@@ -728,12 +641,12 @@ h1 .fa-search {
             justify-content: center;
     z-index: 40;
   }
-  /* line 62, src/sass/components/_queries.scss */
+  /* line 73, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
     grid-row: 2;
   }
-  /* line 67, src/sass/components/_queries.scss */
+  /* line 78, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 2;
@@ -748,16 +661,24 @@ h1 .fa-search {
             justify-content: center;
     z-index: 40;
   }
-  /* line 76, src/sass/components/_queries.scss */
+  /* line 87, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 82, src/sass/components/_queries.scss */
+  /* line 93, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
+  }
+  /* line 96, src/sass/components/_queries.scss */
+  .video--wrapper {
+    height: 100vh;
+  }
+  /* line 99, src/sass/components/_queries.scss */
+  #background_video {
+    height: 100vh;
   }
 }
 
@@ -843,4 +764,225 @@ footer .codepen:hover {
 /* line 69, src/sass/components/_footer.scss */
 footer .github:hover {
   background-color: #2ebc4f;
+}
+
+/* line 1, src/sass/components/_video.scss */
+.video--wrapper {
+  position: relative;
+  height: 300vh;
+  width: 100vw;
+}
+
+/* line 7, src/sass/components/_video.scss */
+#background_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300vh;
+  width: 100%;
+}
+
+/* line 17, src/sass/components/_video.scss */
+#containerv {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 26, src/sass/components/_video.scss */
+#video_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #007d9f;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 35, src/sass/components/_video.scss */
+#video_controls {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+/* line 41, src/sass/components/_video.scss */
+#play img {
+  width: 100px;
+}
+
+/* line 44, src/sass/components/_video.scss */
+#pause img {
+  width: 90px;
+}
+
+/* line 47, src/sass/components/_video.scss */
+#pause {
+  display: none;
+}
+
+/* line 50, src/sass/components/_video.scss */
+#video_controls {
+  display: none;
+}
+
+/* line 53, src/sass/components/_video.scss */
+#containerv {
+  height: 100%;
+}
+
+/* line 57, src/sass/components/_video.scss */
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* line 63, src/sass/components/_video.scss */
+.services {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  /* Vertical center */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* 768 and up */
+@media screen and (min-width: 767px) {
+  /* line 3, src/sass/components/_queries.scss */
+  .block--services__list {
+    grid-template: repeat(3, auto)/repeat(2, 1fr);
+  }
+  /* line 6, src/sass/components/_queries.scss */
+  .video--wrapper {
+    height: 200vh;
+  }
+  /* line 9, src/sass/components/_queries.scss */
+  #background_video {
+    height: 200vh;
+  }
+  /* line 12, src/sass/components/_queries.scss */
+  #overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* line 15, src/sass/components/_queries.scss */
+  .logo h1 {
+    font-size: 6rem;
+  }
+  /* line 19, src/sass/components/_queries.scss */
+  h1 .fa-search {
+    font-size: 4.4rem;
+  }
+  /* line 23, src/sass/components/_queries.scss */
+  header {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    padding: 0;
+  }
+  /* line 29, src/sass/components/_queries.scss */
+  .divider,
+  .divider--alt {
+    display: block;
+    grid-column: 1 / span 3;
+    background: url("/img/img-color-lines__bg.jpg");
+    background-size: cover;
+    height: 60px;
+  }
+  /* line 38, src/sass/components/_queries.scss */
+  .divider {
+    grid-row: 1;
+  }
+  /* line 42, src/sass/components/_queries.scss */
+  .divider--alt {
+    grid-row: 4;
+  }
+  /* line 46, src/sass/components/_queries.scss */
+  .divider {
+    -webkit-box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
+  }
+  /* line 50, src/sass/components/_queries.scss */
+  .divider--alt {
+    -webkit-box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
+  }
+  /* line 54, src/sass/components/_queries.scss */
+  .section--head {
+    padding-top: 15rem;
+  }
+  /* line 57, src/sass/components/_queries.scss */
+  .block--services__item h3 {
+    font-size: 2rem;
+  }
+}
+
+/* 1024 and up */
+@media screen and (min-width: 1023px) {
+  /* line 64, src/sass/components/_queries.scss */
+  .hipster-dood {
+    grid-column: 1;
+    grid-row: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 40;
+  }
+  /* line 73, src/sass/components/_queries.scss */
+  .logo {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  /* line 78, src/sass/components/_queries.scss */
+  .hipster-chic {
+    grid-column: 3;
+    grid-row: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 40;
+  }
+  /* line 87, src/sass/components/_queries.scss */
+  .portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1383px) {
+  /* line 93, src/sass/components/_queries.scss */
+  .block--services__list {
+    grid-template: repeat(2, auto)/repeat(3, 1fr);
+  }
+  /* line 96, src/sass/components/_queries.scss */
+  .video--wrapper {
+    height: 100vh;
+  }
+  /* line 99, src/sass/components/_queries.scss */
+  #background_video {
+    height: 100vh;
+  }
 }

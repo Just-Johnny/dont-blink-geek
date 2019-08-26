@@ -140,12 +140,12 @@ section.margin__remove {
 }
 
 /* Service Blocks */
-.services--head {
+.section--head {
 	padding-top: 5rem;
 }
 
 .services {
-	background: #002342;
+	/* background: #002342; */
 	padding: 8rem 0;
 }
 
@@ -200,7 +200,7 @@ section.margin__remove {
 }
 
 .block--services__item h3 {
-	font-size: 2rem;
+	font-size: 3rem;
 	margin-bottom: 20px;
 	line-height: normal;
 }

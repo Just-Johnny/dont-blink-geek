@@ -63,7 +63,13 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <header>
-    <div class="divider"></div>
+    <div class="divider">
+      <!-- <select onchange="if (this.value) window.location.href=this.value">
+        <option value="">Pick one:</option>
+        <option value="/v1/">Foo</option>
+        <option value="/bar">Bar</option>
+      </select> -->
+    </div>
     <div class="hipster-dood"><img src="/img/img--header__hipster-dood.png"
         class="img-responsive img--header__hipster-dood"></div>
     <div class="logo">
@@ -75,7 +81,6 @@
         class="img-responsive img--header__hipster-gal"></div>
     <div class="divider--alt"></div>
   </header>
-
   <div class="services--head">
     <div class="container">
       <div class="section--head">
@@ -85,60 +90,81 @@
       </div>
     </div>
   </div>
-  <section class="services">
-    <div class="container">
-      <div class="block--services__list">
-        <div class="block--services__item"> <span class="icon feature_box_col_one"><i class="fas fa-code"></i></span>
-          <div class="block--services__text">
-            <h3>Web Development</h3>
-            <p>I've been developing websites since the late '90s and professionally for over 13 years.
-            </p>
-          </div>
-        </div>
-        <div class="block--services__item"> <span class="icon feature_box_col_two"><i class="fas fa-wrench"></i></span>
-          <div class="block--services__text">
-            <h3>Website Optimization</h3>
-            <p>Slow website? I can review, provide suggestions and implement solutions.
-            </p>
-          </div>
-        </div>
-        <div class="block--services__item"> <span class="icon feature_box_col_three"><i
-              class="fas fa-search"></i></span>
-          <div class="block--services__text">
-            <h3>Search Engine Marketing (SEM)</h3>
-            <p>I have multiple AdWord certifications and can help get your online advertising off the ground.
-            </p>
-          </div>
-        </div>
-        <div class="block--services__item"> <span class="icon feature_box_col_four"><i
-              class="fas fa-chart-bar"></i></span>
-          <div class="block--services__text">
-            <h3>Data Analytics</h3>
-            <p>Take the guess work out of the equation and use hard data to make decisions and see results.
-            </p>
-          </div>
-        </div>
-        <div class="block--services__item"> <span class="icon feature_box_col_five"><i
-              class="fas fa-arrow-alt-circle-up"></i></span>
-          <div class="block--services__text">
-            <h3>Uptime Monitoring</h3>
-            <p>Your website could go down for several days before you even notice. I can consistently monitor and jump
-              into action if it goes down.
-            </p>
-          </div>
-        </div>
-        <div class="block--services__item"> <span class="icon feature_box_col_six"><i
-              class="fas fa-mail-bulk"></i></span>
-          <div class="block--services__text">
-            <h3>Email Marketing</h3>
-            <p>A staple of every online company. It's important to send regular emails to your visitors to maintain
-              top-of-mind awareness.
-            </p>
-          </div>
-        </div>
+
+  <div class="video--wrapper">
+    <div id="containerv">
+      <video id="background_video" loop muted></video>
+      <div id="video_cover"></div>
+      <div id="overlay"></div>
+
+      <div id="video_controls">
+        <span id="play">
+          <img src="/img/play.png">
+        </span>
+        <span id="pause">
+          <img src="/img/pause.png">
+        </span>
       </div>
+      <!-- Add content here -->
+      <section class="services">
+        <div class="container">
+          <div class="block--services__list">
+            <div class="block--services__item"> <span class="icon feature_box_col_one"><i
+                  class="fas fa-code"></i></span>
+              <div class="block--services__text">
+                <h3>Web Development</h3>
+                <p>I've been developing websites since the late '90s and professionally for over 13 years.
+                </p>
+              </div>
+            </div>
+            <div class="block--services__item"> <span class="icon feature_box_col_two"><i
+                  class="fas fa-wrench"></i></span>
+              <div class="block--services__text">
+                <h3>Website Optimization</h3>
+                <p>Slow website? I can review, provide suggestions and implement solutions.
+                </p>
+              </div>
+            </div>
+            <div class="block--services__item"> <span class="icon feature_box_col_three"><i
+                  class="fas fa-search"></i></span>
+              <div class="block--services__text">
+                <h3>Search Engine Marketing (SEM)</h3>
+                <p>I have multiple AdWord certifications and can help get your online advertising off the ground.
+                </p>
+              </div>
+            </div>
+            <div class="block--services__item"> <span class="icon feature_box_col_four"><i
+                  class="fas fa-chart-bar"></i></span>
+              <div class="block--services__text">
+                <h3>Data Analytics</h3>
+                <p>Take the guess work out of the equation and use hard data to make decisions and see results.
+                </p>
+              </div>
+            </div>
+            <div class="block--services__item"> <span class="icon feature_box_col_five"><i
+                  class="fas fa-arrow-alt-circle-up"></i></span>
+              <div class="block--services__text">
+                <h3>Uptime Monitoring</h3>
+                <p>Your website could go down for several days before you even notice. I can consistently monitor and
+                  jump
+                  into action if it goes down.
+                </p>
+              </div>
+            </div>
+            <div class="block--services__item"> <span class="icon feature_box_col_six"><i
+                  class="fas fa-mail-bulk"></i></span>
+              <div class="block--services__text">
+                <h3>Email Marketing</h3>
+                <p>A staple of every online company. It's important to send regular emails to your visitors to maintain
+                  top-of-mind awareness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <div class="container">
     <div class="section--head">
@@ -205,9 +231,11 @@
             class="fab fa-3x fa-github"></i></a></li>
     </ul>
     <p>John Burks, Don't Blink Geek &copy;2019</p>
+
   </footer>
+
   <!-- Scripts -->
-  <!-- <script src="/js/main.js"></script> -->
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
