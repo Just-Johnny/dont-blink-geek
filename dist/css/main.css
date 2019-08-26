@@ -339,7 +339,7 @@ section.margin__remove {
   display: grid;
   grid-template: repeat(6, auto)/repeat(1, 1fr);
   grid-gap: 50px;
-  padding: 0 50px;
+  padding: 0 10px;
 }
 
 /* line 159, src/sass/components/_base.scss */
@@ -560,34 +560,35 @@ h1 .fa-search {
   /* line 3, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(3, auto)/repeat(2, 1fr);
+    padding: 0 50px;
   }
-  /* line 6, src/sass/components/_queries.scss */
+  /* line 7, src/sass/components/_queries.scss */
   .video--wrapper {
-    height: 200vh;
+    height: 1300px;
   }
-  /* line 9, src/sass/components/_queries.scss */
+  /* line 10, src/sass/components/_queries.scss */
   #background_video {
-    height: 200vh;
+    height: 1300px;
   }
-  /* line 12, src/sass/components/_queries.scss */
+  /* line 13, src/sass/components/_queries.scss */
   #overlay {
     background: rgba(0, 0, 0, 0.3);
   }
-  /* line 15, src/sass/components/_queries.scss */
+  /* line 16, src/sass/components/_queries.scss */
   .logo h1 {
     font-size: 6rem;
   }
-  /* line 19, src/sass/components/_queries.scss */
+  /* line 20, src/sass/components/_queries.scss */
   h1 .fa-search {
     font-size: 4.4rem;
   }
-  /* line 23, src/sass/components/_queries.scss */
+  /* line 24, src/sass/components/_queries.scss */
   header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 29, src/sass/components/_queries.scss */
+  /* line 30, src/sass/components/_queries.scss */
   .divider,
   .divider--alt {
     display: block;
@@ -596,29 +597,29 @@ h1 .fa-search {
     background-size: cover;
     height: 60px;
   }
-  /* line 38, src/sass/components/_queries.scss */
+  /* line 39, src/sass/components/_queries.scss */
   .divider {
     grid-row: 1;
   }
-  /* line 42, src/sass/components/_queries.scss */
+  /* line 43, src/sass/components/_queries.scss */
   .divider--alt {
     grid-row: 4;
   }
-  /* line 46, src/sass/components/_queries.scss */
+  /* line 47, src/sass/components/_queries.scss */
   .divider {
     -webkit-box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
   }
-  /* line 50, src/sass/components/_queries.scss */
+  /* line 51, src/sass/components/_queries.scss */
   .divider--alt {
     -webkit-box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
   }
-  /* line 54, src/sass/components/_queries.scss */
+  /* line 55, src/sass/components/_queries.scss */
   .section--head {
     padding-top: 15rem;
   }
-  /* line 57, src/sass/components/_queries.scss */
+  /* line 58, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -626,7 +627,7 @@ h1 .fa-search {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 64, src/sass/components/_queries.scss */
+  /* line 65, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 2;
@@ -641,12 +642,12 @@ h1 .fa-search {
             justify-content: center;
     z-index: 40;
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 74, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
     grid-row: 2;
   }
-  /* line 78, src/sass/components/_queries.scss */
+  /* line 79, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 2;
@@ -661,22 +662,22 @@ h1 .fa-search {
             justify-content: center;
     z-index: 40;
   }
-  /* line 87, src/sass/components/_queries.scss */
+  /* line 88, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 93, src/sass/components/_queries.scss */
+  /* line 94, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 96, src/sass/components/_queries.scss */
+  /* line 97, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 99, src/sass/components/_queries.scss */
+  /* line 100, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
   }
@@ -769,7 +770,7 @@ footer .github:hover {
 /* line 1, src/sass/components/_video.scss */
 .video--wrapper {
   position: relative;
-  height: 300vh;
+  height: 2600px;
   width: 100vw;
 }
 
@@ -782,7 +783,7 @@ footer .github:hover {
           transform: translate(-50%, -50%);
   -o-object-fit: cover;
      object-fit: cover;
-  height: 300vh;
+  height: 2600px;
   width: 100%;
 }
 
@@ -865,34 +866,35 @@ footer .github:hover {
   /* line 3, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(3, auto)/repeat(2, 1fr);
+    padding: 0 50px;
   }
-  /* line 6, src/sass/components/_queries.scss */
+  /* line 7, src/sass/components/_queries.scss */
   .video--wrapper {
-    height: 200vh;
+    height: 1300px;
   }
-  /* line 9, src/sass/components/_queries.scss */
+  /* line 10, src/sass/components/_queries.scss */
   #background_video {
-    height: 200vh;
+    height: 1300px;
   }
-  /* line 12, src/sass/components/_queries.scss */
+  /* line 13, src/sass/components/_queries.scss */
   #overlay {
     background: rgba(0, 0, 0, 0.3);
   }
-  /* line 15, src/sass/components/_queries.scss */
+  /* line 16, src/sass/components/_queries.scss */
   .logo h1 {
     font-size: 6rem;
   }
-  /* line 19, src/sass/components/_queries.scss */
+  /* line 20, src/sass/components/_queries.scss */
   h1 .fa-search {
     font-size: 4.4rem;
   }
-  /* line 23, src/sass/components/_queries.scss */
+  /* line 24, src/sass/components/_queries.scss */
   header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 29, src/sass/components/_queries.scss */
+  /* line 30, src/sass/components/_queries.scss */
   .divider,
   .divider--alt {
     display: block;
@@ -901,29 +903,29 @@ footer .github:hover {
     background-size: cover;
     height: 60px;
   }
-  /* line 38, src/sass/components/_queries.scss */
+  /* line 39, src/sass/components/_queries.scss */
   .divider {
     grid-row: 1;
   }
-  /* line 42, src/sass/components/_queries.scss */
+  /* line 43, src/sass/components/_queries.scss */
   .divider--alt {
     grid-row: 4;
   }
-  /* line 46, src/sass/components/_queries.scss */
+  /* line 47, src/sass/components/_queries.scss */
   .divider {
     -webkit-box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
   }
-  /* line 50, src/sass/components/_queries.scss */
+  /* line 51, src/sass/components/_queries.scss */
   .divider--alt {
     -webkit-box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
   }
-  /* line 54, src/sass/components/_queries.scss */
+  /* line 55, src/sass/components/_queries.scss */
   .section--head {
     padding-top: 15rem;
   }
-  /* line 57, src/sass/components/_queries.scss */
+  /* line 58, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -931,7 +933,7 @@ footer .github:hover {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 64, src/sass/components/_queries.scss */
+  /* line 65, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 2;
@@ -946,12 +948,12 @@ footer .github:hover {
             justify-content: center;
     z-index: 40;
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 74, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
     grid-row: 2;
   }
-  /* line 78, src/sass/components/_queries.scss */
+  /* line 79, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 2;
@@ -966,22 +968,22 @@ footer .github:hover {
             justify-content: center;
     z-index: 40;
   }
-  /* line 87, src/sass/components/_queries.scss */
+  /* line 88, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 93, src/sass/components/_queries.scss */
+  /* line 94, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 96, src/sass/components/_queries.scss */
+  /* line 97, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 99, src/sass/components/_queries.scss */
+  /* line 100, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
   }

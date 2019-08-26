@@ -2,12 +2,13 @@
 @media screen and (min-width: 767px) {
     .block--services__list {
         grid-template: repeat(3, auto) / repeat(2, 1fr);
+        padding: 0 50px;
     }
     .video--wrapper {
-        height: 200vh;
+        height: 1300px;
     }
     #background_video {
-        height: 200vh;
+        height: 1300px;
     }
     #overlay {
         background: rgba(0,0,0,0.3);
