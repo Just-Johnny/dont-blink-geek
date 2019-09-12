@@ -225,7 +225,14 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="/js/main.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const script = document.createElement("script");
+      script.src = "/js/main.js";
+      document.body.appendChild(script);
+    });
+  </script>
+  <!-- <script src="/js/main.js"></script> -->
 </body>
 
 </html>
