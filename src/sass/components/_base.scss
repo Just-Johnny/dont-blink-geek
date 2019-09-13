@@ -239,7 +239,7 @@ section.margin__remove {
 	max-width: 1920px;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: 30px;
+	grid-gap: 0;
 	grid-auto-flow: row;
 	justify-items: center;
 
@@ -247,21 +247,33 @@ section.margin__remove {
 		padding: 3rem;
 		border: 1px solid #dfdfdf;
 		background: #f4f4f4;
+
+		div {
+			padding: 1rem 0 2rem 2rem;
+			border-top: none;
+			border-bottom: none;
+			border-right: none;
+			border-left: 20px solid #d72f15;
+			background: none;
+		}
 	}
 
 	h3 {
 		color: #d72f15;
 		padding: 10px;
-		font-size: 2.2rem;
+		font-size: 2.6rem;
 		text-transform: uppercase;
 	}
 
 	li {
 		display: inline-block;
 		padding: 10px;
-		border-radius: 5px;
-		background: #95d9da;
+		background: #ffffff;
 		margin-bottom: 1rem;
+	}
+
+	img {
+		border: 1px solid #dfdfdf;
 	}
 
 	a {

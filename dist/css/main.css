@@ -443,7 +443,7 @@ section.margin__remove {
   max-width: 1920px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 30px;
+  grid-gap: 0;
   grid-auto-flow: row;
   justify-items: center;
 }
@@ -455,24 +455,38 @@ section.margin__remove {
   background: #f4f4f4;
 }
 
-/* line 252, src/sass/components/_base.scss */
+/* line 251, src/sass/components/_base.scss */
+.portfolio div div {
+  padding: 1rem 0 2rem 2rem;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 20px solid #d72f15;
+  background: none;
+}
+
+/* line 261, src/sass/components/_base.scss */
 .portfolio h3 {
   color: #d72f15;
   padding: 10px;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
 }
 
-/* line 259, src/sass/components/_base.scss */
+/* line 268, src/sass/components/_base.scss */
 .portfolio li {
   display: inline-block;
   padding: 10px;
-  border-radius: 5px;
-  background: #95d9da;
+  background: #ffffff;
   margin-bottom: 1rem;
 }
 
-/* line 267, src/sass/components/_base.scss */
+/* line 275, src/sass/components/_base.scss */
+.portfolio img {
+  border: 1px solid #dfdfdf;
+}
+
+/* line 279, src/sass/components/_base.scss */
 .portfolio a {
   color: #d72f15;
   padding: 10px;
