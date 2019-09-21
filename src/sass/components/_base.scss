@@ -1,3 +1,7 @@
+body {
+	background: #d8c49a;
+}
+
 h1,
 h2,
 h3,
@@ -24,19 +28,17 @@ h3 {
 	height: auto;
 }
 
-header,
-section {
-	margin-bottom: 3rem;
-}
-
 section {
 	width: 100%;
-	margin-bottom: 10rem;
 }
 
 .container {
-	max-width: 1370px;
+	max-width: 1050px;
 	margin: 0 auto;
+}
+
+.services .container {
+	max-width: 1370px;
 }
 
 section.margin__remove {
@@ -44,12 +46,11 @@ section.margin__remove {
 }
 
 .section--head {
-	margin-bottom: 3rem;
-	padding: 0 50px;
 
 	h2,
 	p {
 		text-align: center;
+		padding: 0 3rem;
 	}
 
 	h2 {
@@ -63,7 +64,7 @@ section.margin__remove {
 	}
 
 	p {
-		color: #818181;
+		color: #000;
 		font-size: 2.4rem;
 		line-height: normal;
 	}
@@ -73,79 +74,14 @@ section.margin__remove {
 .container--full__width {}
 
 /* Page Content */
-/* Hero Banner */
-.skyline--full {
-	display: flex;
-	position: relative;
-	height: 100vh;
-	background: url(../img/img-sunset__bg.jpg);
-	background-size: cover;
-	background-position: center center;
-	z-index: 10;
-}
 
-.skyline--full__city {
-	width: 100%;
-	position: absolute;
-	bottom: 25%;
-	z-index: 20;
-}
-
-.skyline--full__city img,
-.skyline--full__people img {
-	display: block;
-	height: auto;
-	width: 100%;
-}
-
-.skyline--full__people img {
-	transform: scaleX(-1);
-}
-
-.skyline--full__people {
-	width: 100%;
-	position: absolute;
-	bottom: 25%;
-	z-index: 30;
-}
-
-.skyline--full__footer {
-	background: #2f2f2f;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	z-index: 40;
-	height: 26%;
-}
-
-.fade--in__one,
-.fade--in__two,
-.fade--in__three {
-	opacity: 0;
-}
-
-.fade--in__one,
-.fade--in__two {
-	transition: opacity 2000ms ease-in;
-}
-
-.fade--in__three {
-	transition: opacity 1000ms ease-in;
-}
-
-.fade--in__one.appear,
-.fade--in__two.appear,
-.fade--in__three.appear {
-	opacity: 1;
+.section--head {
+	padding: 15rem 0;
 }
 
 /* Service Blocks */
-.section--head {
-	padding-top: 5rem;
-}
 
 .services {
-	/* background: #002342; */
 	padding: 8rem 0;
 }
 

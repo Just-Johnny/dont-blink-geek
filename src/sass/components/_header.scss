@@ -25,15 +25,13 @@ header {
 .logo {
     grid-column: 1 / span 3;
     grid-row: 1 / span 4;
-    position: relative;
-    z-index: 30;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
     flex-direction: column;
-    max-width: 1260px;
     padding: 50px;
+    background: #d7614e;
 
     h1,
     p {
@@ -42,19 +40,21 @@ header {
     }
 
     h1 {
-        color: #007d9f;
+        color: #fff;
         font-size: 3rem;
         padding-top: 0;
+        text-shadow: 2px 2px 2px #000;
 
     }
 
     p {
-        color: #000;
+        color: #262525;
         font-size: 2rem;
     }
 }
 
 h1 .fa-search {
     font-size: 2.4rem;
-    color: #007d9f;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
 }

@@ -4,15 +4,19 @@
         grid-template: repeat(3, auto) / repeat(2, 1fr);
         padding: 0 50px;
     }
+
     .video--wrapper {
         height: 1300px;
     }
+
     #background_video {
         height: 1300px;
     }
+
     #overlay {
-        background: rgba(0,0,0,0.3);
-      }
+        background: rgba(0, 0, 0, 0.3);
+    }
+
     .logo h1 {
         font-size: 6rem;
     }
@@ -27,34 +31,6 @@
         padding: 0;
     }
 
-    .divider,
-    .divider--alt {
-        display: block;
-        grid-column: 1 / span 3;
-        background: url('/img/img-color-lines__bg.jpg');
-        background-size: cover;
-        height: 60px;
-    }
-
-    .divider {
-        grid-row: 1;
-    }
-
-    .divider--alt {
-        grid-row: 4;
-    }
-
-    .divider {
-        box-shadow: inset 0px -7px 6px -2px rgba(0, 0, 0, 0.25);
-    }
-
-    .divider--alt {
-        box-shadow: inset 0px 7px 6px -2px rgba(0, 0, 0, 0.25);
-    }
-
-    .section--head {
-        padding-top: 15rem;
-    }
     .block--services__item h3 {
         font-size: 2rem;
     }
@@ -64,25 +40,24 @@
 @media screen and (min-width: 1023px) {
     .hipster-dood {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1 / span 4;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 40;
+        background: #007d9f;
     }
 
     .logo {
         grid-column: 2;
-        grid-row: 2;
     }
 
     .hipster-chic {
         grid-column: 3;
-        grid-row: 2;
+        grid-row: 1 / span 4;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 40;
+        background: #d7614e;
     }
 
     .portfolio {
@@ -94,9 +69,11 @@
     .block--services__list {
         grid-template: repeat(2, auto) / repeat(3, 1fr);
     }
+
     .video--wrapper {
         height: 100vh;
     }
+
     #background_video {
         height: 100vh;
     }
