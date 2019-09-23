@@ -106,7 +106,7 @@ video {
   margin: 0;
   font-size: 1.6rem;
   overflow-x: hidden;
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', monospace;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -178,7 +178,7 @@ ul,
 ol,
 input,
 label {
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', monospace;
 }
 
 /* line 22, src/sass/components/_base.scss */
@@ -254,7 +254,7 @@ section.margin__remove {
 .block--services__list {
   display: grid;
   grid-template: repeat(6, auto)/repeat(1, 1fr);
-  grid-gap: 50px;
+  grid-gap: 15px;
   padding: 0 10px;
 }
 
@@ -266,19 +266,28 @@ section.margin__remove {
   padding: 30px 25px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
 }
 
 /* line 105, src/sass/components/_base.scss */
+.block--services__list .block--services__item:nth-child(even) {
+  background: #007d9f;
+}
+
+/* line 109, src/sass/components/_base.scss */
+.block--services__list .block--services__item:nth-child(odd) {
+  background: #d7614e;
+}
+
+/* line 113, src/sass/components/_base.scss */
 .block--services__item span {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
-/* line 111, src/sass/components/_base.scss */
+/* line 119, src/sass/components/_base.scss */
 .block--services__item .icon {
   font-size: 4rem;
   margin-bottom: 2.5rem;
@@ -289,7 +298,7 @@ section.margin__remove {
   border-radius: 50px;
 }
 
-/* line 121, src/sass/components/_base.scss */
+/* line 129, src/sass/components/_base.scss */
 .block--services__item .feature_box_col_one,
 .block--services__item .feature_box_col_two,
 .block--services__item .feature_box_col_three,
@@ -300,7 +309,7 @@ section.margin__remove {
   color: #d72f15;
 }
 
-/* line 131, src/sass/components/_base.scss */
+/* line 139, src/sass/components/_base.scss */
 .block--services__text {
   background: #002342;
   padding: 15px;
@@ -308,20 +317,20 @@ section.margin__remove {
   min-height: 148px;
 }
 
-/* line 138, src/sass/components/_base.scss */
+/* line 146, src/sass/components/_base.scss */
 .block--services__item h3 {
   font-size: 3rem;
   margin-bottom: 20px;
   line-height: normal;
 }
 
-/* line 144, src/sass/components/_base.scss */
+/* line 152, src/sass/components/_base.scss */
 .block--services__item p {
   font-size: 1.8rem;
   line-height: normal;
 }
 
-/* line 149, src/sass/components/_base.scss */
+/* line 157, src/sass/components/_base.scss */
 .block--services__item:hover {
   background: #d72f15;
   -webkit-box-shadow: none;
@@ -330,7 +339,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 155, src/sass/components/_base.scss */
+/* line 163, src/sass/components/_base.scss */
 .block--services__item:hover .item,
 .block--services__item:hover span.icon {
   background: #fff;
@@ -339,7 +348,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 162, src/sass/components/_base.scss */
+/* line 170, src/sass/components/_base.scss */
 .block--services__item:hover h3,
 .block--services__item:hover p {
   color: #fff;
@@ -348,13 +357,13 @@ section.margin__remove {
 }
 
 /* Portfolio */
-/* line 169, src/sass/components/_base.scss */
+/* line 177, src/sass/components/_base.scss */
 .portfolio--full__width {
   background: #002342;
   padding: 10rem 0 5rem 0;
 }
 
-/* line 174, src/sass/components/_base.scss */
+/* line 182, src/sass/components/_base.scss */
 .portfolio {
   max-width: 1920px;
   display: grid;
@@ -364,14 +373,14 @@ section.margin__remove {
   justify-items: center;
 }
 
-/* line 182, src/sass/components/_base.scss */
+/* line 190, src/sass/components/_base.scss */
 .portfolio div {
   padding: 3rem;
   border: 1px solid #dfdfdf;
   background: #f4f4f4;
 }
 
-/* line 187, src/sass/components/_base.scss */
+/* line 195, src/sass/components/_base.scss */
 .portfolio div div {
   padding: 1rem 0 2rem 2rem;
   border-top: none;
@@ -381,7 +390,7 @@ section.margin__remove {
   background: none;
 }
 
-/* line 197, src/sass/components/_base.scss */
+/* line 205, src/sass/components/_base.scss */
 .portfolio h3 {
   color: #d72f15;
   padding: 10px;
@@ -389,7 +398,7 @@ section.margin__remove {
   text-transform: uppercase;
 }
 
-/* line 204, src/sass/components/_base.scss */
+/* line 212, src/sass/components/_base.scss */
 .portfolio li {
   display: inline-block;
   padding: 10px;
@@ -397,12 +406,12 @@ section.margin__remove {
   margin-bottom: 1rem;
 }
 
-/* line 211, src/sass/components/_base.scss */
+/* line 219, src/sass/components/_base.scss */
 .portfolio img {
   border: 1px solid #dfdfdf;
 }
 
-/* line 215, src/sass/components/_base.scss */
+/* line 223, src/sass/components/_base.scss */
 .portfolio a {
   color: #d72f15;
   padding: 10px;
@@ -501,24 +510,20 @@ h1 .fa-search {
     height: 1300px;
   }
   /* line 16, src/sass/components/_queries.scss */
-  #overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  /* line 20, src/sass/components/_queries.scss */
   .logo h1 {
     font-size: 6rem;
   }
-  /* line 24, src/sass/components/_queries.scss */
+  /* line 20, src/sass/components/_queries.scss */
   h1 .fa-search {
     font-size: 4.4rem;
   }
-  /* line 28, src/sass/components/_queries.scss */
+  /* line 24, src/sass/components/_queries.scss */
   header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 34, src/sass/components/_queries.scss */
+  /* line 30, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -526,7 +531,7 @@ h1 .fa-search {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 41, src/sass/components/_queries.scss */
+  /* line 37, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 1 / span 4;
@@ -541,11 +546,11 @@ h1 .fa-search {
             justify-content: center;
     background: #007d9f;
   }
-  /* line 50, src/sass/components/_queries.scss */
+  /* line 46, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
   }
-  /* line 54, src/sass/components/_queries.scss */
+  /* line 50, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 1 / span 4;
@@ -560,22 +565,22 @@ h1 .fa-search {
             justify-content: center;
     background: #d7614e;
   }
-  /* line 63, src/sass/components/_queries.scss */
+  /* line 59, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 69, src/sass/components/_queries.scss */
+  /* line 65, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 69, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 77, src/sass/components/_queries.scss */
+  /* line 73, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
   }
@@ -616,7 +621,7 @@ footer h3 {
 /* line 29, src/sass/components/_footer.scss */
 footer p {
   font-size: 1.5rem;
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', monospace;
 }
 
 /* line 34, src/sass/components/_footer.scss */
@@ -672,7 +677,27 @@ footer .github:hover {
   width: 100vw;
 }
 
-/* line 7, src/sass/components/_video.scss */
+/* .video--wrapper {
+  background: #007d9f;
+  background: linear-gradient(-45deg, #7c7c7c, #3f3f3f, #2b2b2b, #181818);
+  background-size: 800% 800%;
+  animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/* line 28, src/sass/components/_video.scss */
 #background_video {
   position: absolute;
   top: 50%;
@@ -685,7 +710,7 @@ footer .github:hover {
   width: 100%;
 }
 
-/* line 17, src/sass/components/_video.scss */
+/* line 38, src/sass/components/_video.scss */
 #containerv {
   overflow: hidden;
   position: absolute;
@@ -695,7 +720,7 @@ footer .github:hover {
   bottom: 0;
 }
 
-/* line 26, src/sass/components/_video.scss */
+/* line 47, src/sass/components/_video.scss */
 #video_cover {
   position: absolute;
   width: 100%;
@@ -705,7 +730,7 @@ footer .github:hover {
   background-position: center;
 }
 
-/* line 35, src/sass/components/_video.scss */
+/* line 56, src/sass/components/_video.scss */
 #video_controls {
   position: absolute;
   left: 50%;
@@ -713,47 +738,46 @@ footer .github:hover {
           transform: translate(-50%, 0);
 }
 
-/* line 41, src/sass/components/_video.scss */
+/* line 62, src/sass/components/_video.scss */
 #play img {
   width: 100px;
 }
 
-/* line 44, src/sass/components/_video.scss */
+/* line 66, src/sass/components/_video.scss */
 #pause img {
   width: 90px;
 }
 
-/* line 47, src/sass/components/_video.scss */
+/* line 70, src/sass/components/_video.scss */
 #pause {
   display: none;
 }
 
-/* line 50, src/sass/components/_video.scss */
+/* line 74, src/sass/components/_video.scss */
 #video_controls {
   display: none;
 }
 
-/* line 53, src/sass/components/_video.scss */
+/* line 78, src/sass/components/_video.scss */
 #containerv {
   height: 100%;
 }
 
-/* line 57, src/sass/components/_video.scss */
+/* line 82, src/sass/components/_video.scss */
 #overlay {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 63, src/sass/components/_video.scss */
+/* line 91, src/sass/components/_video.scss */
 .services {
   z-index: 2;
   position: relative;
   display: inline-block;
-  /* Vertical center */
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2211,24 +2235,20 @@ footer .github:hover {
     height: 1300px;
   }
   /* line 16, src/sass/components/_queries.scss */
-  #overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  /* line 20, src/sass/components/_queries.scss */
   .logo h1 {
     font-size: 6rem;
   }
-  /* line 24, src/sass/components/_queries.scss */
+  /* line 20, src/sass/components/_queries.scss */
   h1 .fa-search {
     font-size: 4.4rem;
   }
-  /* line 28, src/sass/components/_queries.scss */
+  /* line 24, src/sass/components/_queries.scss */
   header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 34, src/sass/components/_queries.scss */
+  /* line 30, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -2236,7 +2256,7 @@ footer .github:hover {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 41, src/sass/components/_queries.scss */
+  /* line 37, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 1 / span 4;
@@ -2251,11 +2271,11 @@ footer .github:hover {
             justify-content: center;
     background: #007d9f;
   }
-  /* line 50, src/sass/components/_queries.scss */
+  /* line 46, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
   }
-  /* line 54, src/sass/components/_queries.scss */
+  /* line 50, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 1 / span 4;
@@ -2270,22 +2290,22 @@ footer .github:hover {
             justify-content: center;
     background: #d7614e;
   }
-  /* line 63, src/sass/components/_queries.scss */
+  /* line 59, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 69, src/sass/components/_queries.scss */
+  /* line 65, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 69, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 77, src/sass/components/_queries.scss */
+  /* line 73, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
   }

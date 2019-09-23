@@ -16,7 +16,7 @@ ul,
 ol,
 input,
 label {
-	font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+	font-family: 'Fira Code', monospace;
 }
 
 h3 {
@@ -88,7 +88,7 @@ section.margin__remove {
 .block--services__list {
 	display: grid;
 	grid-template: repeat(6, auto) / repeat(1, 1fr);
-	grid-gap: 50px;
+	grid-gap: 15px;
 	padding: 0 10px;
 }
 
@@ -98,8 +98,16 @@ section.margin__remove {
 	text-align: center;
 	padding: 30px 25px;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
+	// border-radius: 10px;
 	transition: all 0.5s ease 0;
+}
+
+.block--services__list .block--services__item:nth-child(even) {
+	background: #007d9f;
+}
+
+.block--services__list .block--services__item:nth-child(odd) {
+	background: #d7614e;
 }
 
 .block--services__item span {

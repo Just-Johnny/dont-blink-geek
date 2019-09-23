@@ -250,9 +250,8 @@ const appearOptions = {
 
     // Array of objects containing the src and type
     // of different video formats to add
-    src: [
-      {
-        src: '/video/retro-wave-loop.mp4',
+    src: [{
+        src: '/video/dbg-video.mp4',
         type: 'video/mp4'
       },
       //{
