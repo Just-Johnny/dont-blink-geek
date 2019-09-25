@@ -242,15 +242,17 @@ section.margin__remove {
 /* line 78, src/sass/components/_base.scss */
 .section--head {
   padding: 15rem 0;
+  background: url("../img/bg--section__text.png") no-repeat center center;
+  background-size: cover;
 }
 
 /* Service Blocks */
-/* line 84, src/sass/components/_base.scss */
+/* line 86, src/sass/components/_base.scss */
 .services {
   padding: 8rem 0;
 }
 
-/* line 88, src/sass/components/_base.scss */
+/* line 90, src/sass/components/_base.scss */
 .block--services__list {
   display: grid;
   grid-template: repeat(6, auto)/repeat(1, 1fr);
@@ -258,7 +260,7 @@ section.margin__remove {
   padding: 0 10px;
 }
 
-/* line 95, src/sass/components/_base.scss */
+/* line 97, src/sass/components/_base.scss */
 .block--services__item {
   background: #fff;
   color: #fff;
@@ -270,24 +272,24 @@ section.margin__remove {
   transition: all 0.5s ease 0;
 }
 
-/* line 105, src/sass/components/_base.scss */
+/* line 107, src/sass/components/_base.scss */
 .block--services__list .block--services__item:nth-child(even) {
   background: #007d9f;
 }
 
-/* line 109, src/sass/components/_base.scss */
+/* line 111, src/sass/components/_base.scss */
 .block--services__list .block--services__item:nth-child(odd) {
   background: #d7614e;
 }
 
-/* line 113, src/sass/components/_base.scss */
+/* line 115, src/sass/components/_base.scss */
 .block--services__item span {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
-/* line 119, src/sass/components/_base.scss */
+/* line 121, src/sass/components/_base.scss */
 .block--services__item .icon {
   font-size: 4rem;
   margin-bottom: 2.5rem;
@@ -298,7 +300,7 @@ section.margin__remove {
   border-radius: 50px;
 }
 
-/* line 129, src/sass/components/_base.scss */
+/* line 131, src/sass/components/_base.scss */
 .block--services__item .feature_box_col_one,
 .block--services__item .feature_box_col_two,
 .block--services__item .feature_box_col_three,
@@ -309,7 +311,7 @@ section.margin__remove {
   color: #d72f15;
 }
 
-/* line 139, src/sass/components/_base.scss */
+/* line 141, src/sass/components/_base.scss */
 .block--services__text {
   background: #002342;
   padding: 15px;
@@ -317,20 +319,20 @@ section.margin__remove {
   min-height: 148px;
 }
 
-/* line 146, src/sass/components/_base.scss */
+/* line 148, src/sass/components/_base.scss */
 .block--services__item h3 {
   font-size: 3rem;
   margin-bottom: 20px;
   line-height: normal;
 }
 
-/* line 152, src/sass/components/_base.scss */
+/* line 154, src/sass/components/_base.scss */
 .block--services__item p {
   font-size: 1.8rem;
   line-height: normal;
 }
 
-/* line 157, src/sass/components/_base.scss */
+/* line 159, src/sass/components/_base.scss */
 .block--services__item:hover {
   background: #d72f15;
   -webkit-box-shadow: none;
@@ -339,7 +341,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 163, src/sass/components/_base.scss */
+/* line 165, src/sass/components/_base.scss */
 .block--services__item:hover .item,
 .block--services__item:hover span.icon {
   background: #fff;
@@ -348,7 +350,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 170, src/sass/components/_base.scss */
+/* line 172, src/sass/components/_base.scss */
 .block--services__item:hover h3,
 .block--services__item:hover p {
   color: #fff;
@@ -357,13 +359,13 @@ section.margin__remove {
 }
 
 /* Portfolio */
-/* line 177, src/sass/components/_base.scss */
+/* line 179, src/sass/components/_base.scss */
 .portfolio--full__width {
   background: #002342;
   padding: 10rem 0 5rem 0;
 }
 
-/* line 182, src/sass/components/_base.scss */
+/* line 184, src/sass/components/_base.scss */
 .portfolio {
   max-width: 1920px;
   display: grid;
@@ -373,14 +375,14 @@ section.margin__remove {
   justify-items: center;
 }
 
-/* line 190, src/sass/components/_base.scss */
+/* line 192, src/sass/components/_base.scss */
 .portfolio div {
   padding: 3rem;
   border: 1px solid #dfdfdf;
   background: #f4f4f4;
 }
 
-/* line 195, src/sass/components/_base.scss */
+/* line 197, src/sass/components/_base.scss */
 .portfolio div div {
   padding: 1rem 0 2rem 2rem;
   border-top: none;
@@ -390,7 +392,7 @@ section.margin__remove {
   background: none;
 }
 
-/* line 205, src/sass/components/_base.scss */
+/* line 207, src/sass/components/_base.scss */
 .portfolio h3 {
   color: #d72f15;
   padding: 10px;
@@ -398,7 +400,7 @@ section.margin__remove {
   text-transform: uppercase;
 }
 
-/* line 212, src/sass/components/_base.scss */
+/* line 214, src/sass/components/_base.scss */
 .portfolio li {
   display: inline-block;
   padding: 10px;
@@ -406,12 +408,12 @@ section.margin__remove {
   margin-bottom: 1rem;
 }
 
-/* line 219, src/sass/components/_base.scss */
+/* line 221, src/sass/components/_base.scss */
 .portfolio img {
   border: 1px solid #dfdfdf;
 }
 
-/* line 223, src/sass/components/_base.scss */
+/* line 225, src/sass/components/_base.scss */
 .portfolio a {
   color: #d72f15;
   padding: 10px;
