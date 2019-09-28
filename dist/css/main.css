@@ -199,7 +199,7 @@ section {
 
 /* line 35, src/sass/components/_base.scss */
 .container {
-  max-width: 1050px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -213,46 +213,52 @@ section.margin__remove {
   margin-bottom: 0;
 }
 
-/* line 50, src/sass/components/_base.scss */
+/* line 48, src/sass/components/_base.scss */
+.services--head,
+.portfolio--head {
+  background: #3c00d3;
+}
+
+/* line 55, src/sass/components/_base.scss */
 .section--head h2,
 .section--head p {
   text-align: center;
   padding: 0 3rem;
 }
 
-/* line 56, src/sass/components/_base.scss */
+/* line 61, src/sass/components/_base.scss */
 .section--head h2 {
   padding: 0;
-  color: #d72f15;
+  color: #d7614e;
   line-height: normal;
   font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 2px #000;
 }
 
-/* line 66, src/sass/components/_base.scss */
+/* line 72, src/sass/components/_base.scss */
 .section--head p {
-  color: #000;
+  color: #fff;
   font-size: 2.4rem;
   line-height: normal;
+  text-align: justify;
 }
 
 /* Page Content */
-/* line 78, src/sass/components/_base.scss */
+/* line 85, src/sass/components/_base.scss */
 .section--head {
-  padding: 15rem 0;
-  background: url("../img/bg--section__text.png") no-repeat center center;
-  background-size: cover;
+  padding: 8rem 0;
 }
 
 /* Service Blocks */
-/* line 86, src/sass/components/_base.scss */
+/* line 91, src/sass/components/_base.scss */
 .services {
   padding: 8rem 0;
 }
 
-/* line 90, src/sass/components/_base.scss */
+/* line 95, src/sass/components/_base.scss */
 .block--services__list {
   display: grid;
   grid-template: repeat(6, auto)/repeat(1, 1fr);
@@ -260,7 +266,7 @@ section.margin__remove {
   padding: 0 10px;
 }
 
-/* line 97, src/sass/components/_base.scss */
+/* line 102, src/sass/components/_base.scss */
 .block--services__item {
   background: #fff;
   color: #fff;
@@ -272,24 +278,24 @@ section.margin__remove {
   transition: all 0.5s ease 0;
 }
 
-/* line 107, src/sass/components/_base.scss */
+/* line 112, src/sass/components/_base.scss */
 .block--services__list .block--services__item:nth-child(even) {
   background: #007d9f;
 }
 
-/* line 111, src/sass/components/_base.scss */
+/* line 116, src/sass/components/_base.scss */
 .block--services__list .block--services__item:nth-child(odd) {
   background: #d7614e;
 }
 
-/* line 115, src/sass/components/_base.scss */
+/* line 120, src/sass/components/_base.scss */
 .block--services__item span {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
-/* line 121, src/sass/components/_base.scss */
+/* line 126, src/sass/components/_base.scss */
 .block--services__item .icon {
   font-size: 4rem;
   margin-bottom: 2.5rem;
@@ -300,7 +306,7 @@ section.margin__remove {
   border-radius: 50px;
 }
 
-/* line 131, src/sass/components/_base.scss */
+/* line 136, src/sass/components/_base.scss */
 .block--services__item .feature_box_col_one,
 .block--services__item .feature_box_col_two,
 .block--services__item .feature_box_col_three,
@@ -311,7 +317,7 @@ section.margin__remove {
   color: #d72f15;
 }
 
-/* line 141, src/sass/components/_base.scss */
+/* line 146, src/sass/components/_base.scss */
 .block--services__text {
   background: #002342;
   padding: 15px;
@@ -319,20 +325,20 @@ section.margin__remove {
   min-height: 148px;
 }
 
-/* line 148, src/sass/components/_base.scss */
+/* line 153, src/sass/components/_base.scss */
 .block--services__item h3 {
   font-size: 3rem;
   margin-bottom: 20px;
   line-height: normal;
 }
 
-/* line 154, src/sass/components/_base.scss */
+/* line 159, src/sass/components/_base.scss */
 .block--services__item p {
   font-size: 1.8rem;
   line-height: normal;
 }
 
-/* line 159, src/sass/components/_base.scss */
+/* line 164, src/sass/components/_base.scss */
 .block--services__item:hover {
   background: #d72f15;
   -webkit-box-shadow: none;
@@ -341,7 +347,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 165, src/sass/components/_base.scss */
+/* line 170, src/sass/components/_base.scss */
 .block--services__item:hover .item,
 .block--services__item:hover span.icon {
   background: #fff;
@@ -350,7 +356,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 172, src/sass/components/_base.scss */
+/* line 177, src/sass/components/_base.scss */
 .block--services__item:hover h3,
 .block--services__item:hover p {
   color: #fff;
@@ -359,13 +365,13 @@ section.margin__remove {
 }
 
 /* Portfolio */
-/* line 179, src/sass/components/_base.scss */
+/* line 184, src/sass/components/_base.scss */
 .portfolio--full__width {
   background: #002342;
   padding: 10rem 0 5rem 0;
 }
 
-/* line 184, src/sass/components/_base.scss */
+/* line 189, src/sass/components/_base.scss */
 .portfolio {
   max-width: 1920px;
   display: grid;
@@ -375,14 +381,14 @@ section.margin__remove {
   justify-items: center;
 }
 
-/* line 192, src/sass/components/_base.scss */
+/* line 197, src/sass/components/_base.scss */
 .portfolio div {
   padding: 3rem;
   border: 1px solid #dfdfdf;
   background: #f4f4f4;
 }
 
-/* line 197, src/sass/components/_base.scss */
+/* line 202, src/sass/components/_base.scss */
 .portfolio div div {
   padding: 1rem 0 2rem 2rem;
   border-top: none;
@@ -392,7 +398,7 @@ section.margin__remove {
   background: none;
 }
 
-/* line 207, src/sass/components/_base.scss */
+/* line 212, src/sass/components/_base.scss */
 .portfolio h3 {
   color: #d72f15;
   padding: 10px;
@@ -400,7 +406,7 @@ section.margin__remove {
   text-transform: uppercase;
 }
 
-/* line 214, src/sass/components/_base.scss */
+/* line 219, src/sass/components/_base.scss */
 .portfolio li {
   display: inline-block;
   padding: 10px;
@@ -408,12 +414,12 @@ section.margin__remove {
   margin-bottom: 1rem;
 }
 
-/* line 221, src/sass/components/_base.scss */
+/* line 226, src/sass/components/_base.scss */
 .portfolio img {
   border: 1px solid #dfdfdf;
 }
 
-/* line 225, src/sass/components/_base.scss */
+/* line 230, src/sass/components/_base.scss */
 .portfolio a {
   color: #d72f15;
   padding: 10px;
@@ -590,7 +596,7 @@ h1 .fa-search {
 
 /* line 1, src/sass/components/_footer.scss */
 footer {
-  background: #002342;
+  background: #007d9f;
   padding-bottom: 20px;
 }
 

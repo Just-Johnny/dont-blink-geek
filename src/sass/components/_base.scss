@@ -33,7 +33,7 @@ section {
 }
 
 .container {
-	max-width: 1050px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 
@@ -43,6 +43,11 @@ section {
 
 section.margin__remove {
 	margin-bottom: 0;
+}
+
+.services--head,
+.portfolio--head {
+	background: #3c00d3;
 }
 
 .section--head {
@@ -55,18 +60,20 @@ section.margin__remove {
 
 	h2 {
 		padding: 0;
-		color: #d72f15;
+		color: #d7614e;
 		line-height: normal;
 		font-size: 5rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-bottom: 30px;
+		text-shadow: 2px 2px 2px #000;
 	}
 
 	p {
-		color: #000;
+		color: #fff;
 		font-size: 2.4rem;
 		line-height: normal;
+		text-align: justify;
 	}
 }
 
@@ -76,9 +83,7 @@ section.margin__remove {
 /* Page Content */
 
 .section--head {
-	padding: 15rem 0;
-	background: url('../img/bg--section__text.png') no-repeat center center;
-	background-size: cover;
+	padding: 8rem 0;
 }
 
 /* Service Blocks */
