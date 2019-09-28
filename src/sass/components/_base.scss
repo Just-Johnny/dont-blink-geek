@@ -33,7 +33,6 @@ section {
 }
 
 .container {
-	max-width: 600px;
 	margin: 0 auto;
 }
 
@@ -47,7 +46,15 @@ section.margin__remove {
 
 .services--head,
 .portfolio--head {
-	background: #3c00d3;
+	background-color: #3c00d3;
+}
+
+.services--head {
+	background-image: none;
+}
+
+.portfolio--head {
+	background-image: none;
 }
 
 .section--head {
@@ -70,10 +77,9 @@ section.margin__remove {
 	}
 
 	p {
-		color: #fff;
-		font-size: 2.4rem;
+		color: #d7d7d7;
+		font-size: 2rem;
 		line-height: normal;
-		text-align: justify;
 	}
 }
 

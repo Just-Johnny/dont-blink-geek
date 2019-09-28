@@ -199,34 +199,43 @@ section {
 
 /* line 35, src/sass/components/_base.scss */
 .container {
-  max-width: 600px;
   margin: 0 auto;
 }
 
-/* line 40, src/sass/components/_base.scss */
+/* line 39, src/sass/components/_base.scss */
 .services .container {
   max-width: 1370px;
 }
 
-/* line 44, src/sass/components/_base.scss */
+/* line 43, src/sass/components/_base.scss */
 section.margin__remove {
   margin-bottom: 0;
 }
 
-/* line 48, src/sass/components/_base.scss */
+/* line 47, src/sass/components/_base.scss */
 .services--head,
 .portfolio--head {
-  background: #3c00d3;
+  background-color: #3c00d3;
 }
 
-/* line 55, src/sass/components/_base.scss */
+/* line 52, src/sass/components/_base.scss */
+.services--head {
+  background-image: none;
+}
+
+/* line 56, src/sass/components/_base.scss */
+.portfolio--head {
+  background-image: none;
+}
+
+/* line 62, src/sass/components/_base.scss */
 .section--head h2,
 .section--head p {
   text-align: center;
   padding: 0 3rem;
 }
 
-/* line 61, src/sass/components/_base.scss */
+/* line 68, src/sass/components/_base.scss */
 .section--head h2 {
   padding: 0;
   color: #d7614e;
@@ -238,27 +247,26 @@ section.margin__remove {
   text-shadow: 2px 2px 2px #000;
 }
 
-/* line 72, src/sass/components/_base.scss */
+/* line 79, src/sass/components/_base.scss */
 .section--head p {
-  color: #fff;
-  font-size: 2.4rem;
+  color: #d7d7d7;
+  font-size: 2rem;
   line-height: normal;
-  text-align: justify;
 }
 
 /* Page Content */
-/* line 85, src/sass/components/_base.scss */
+/* line 91, src/sass/components/_base.scss */
 .section--head {
   padding: 8rem 0;
 }
 
 /* Service Blocks */
-/* line 91, src/sass/components/_base.scss */
+/* line 97, src/sass/components/_base.scss */
 .services {
   padding: 8rem 0;
 }
 
-/* line 95, src/sass/components/_base.scss */
+/* line 101, src/sass/components/_base.scss */
 .block--services__list {
   display: grid;
   grid-template: repeat(6, auto)/repeat(1, 1fr);
@@ -266,7 +274,7 @@ section.margin__remove {
   padding: 0 10px;
 }
 
-/* line 102, src/sass/components/_base.scss */
+/* line 108, src/sass/components/_base.scss */
 .block--services__item {
   background: #fff;
   color: #fff;
@@ -278,24 +286,24 @@ section.margin__remove {
   transition: all 0.5s ease 0;
 }
 
-/* line 112, src/sass/components/_base.scss */
+/* line 118, src/sass/components/_base.scss */
 .block--services__list .block--services__item:nth-child(even) {
   background: #007d9f;
 }
 
-/* line 116, src/sass/components/_base.scss */
+/* line 122, src/sass/components/_base.scss */
 .block--services__list .block--services__item:nth-child(odd) {
   background: #d7614e;
 }
 
-/* line 120, src/sass/components/_base.scss */
+/* line 126, src/sass/components/_base.scss */
 .block--services__item span {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
-/* line 126, src/sass/components/_base.scss */
+/* line 132, src/sass/components/_base.scss */
 .block--services__item .icon {
   font-size: 4rem;
   margin-bottom: 2.5rem;
@@ -306,7 +314,7 @@ section.margin__remove {
   border-radius: 50px;
 }
 
-/* line 136, src/sass/components/_base.scss */
+/* line 142, src/sass/components/_base.scss */
 .block--services__item .feature_box_col_one,
 .block--services__item .feature_box_col_two,
 .block--services__item .feature_box_col_three,
@@ -317,7 +325,7 @@ section.margin__remove {
   color: #d72f15;
 }
 
-/* line 146, src/sass/components/_base.scss */
+/* line 152, src/sass/components/_base.scss */
 .block--services__text {
   background: #002342;
   padding: 15px;
@@ -325,20 +333,20 @@ section.margin__remove {
   min-height: 148px;
 }
 
-/* line 153, src/sass/components/_base.scss */
+/* line 159, src/sass/components/_base.scss */
 .block--services__item h3 {
   font-size: 3rem;
   margin-bottom: 20px;
   line-height: normal;
 }
 
-/* line 159, src/sass/components/_base.scss */
+/* line 165, src/sass/components/_base.scss */
 .block--services__item p {
   font-size: 1.8rem;
   line-height: normal;
 }
 
-/* line 164, src/sass/components/_base.scss */
+/* line 170, src/sass/components/_base.scss */
 .block--services__item:hover {
   background: #d72f15;
   -webkit-box-shadow: none;
@@ -347,7 +355,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 170, src/sass/components/_base.scss */
+/* line 176, src/sass/components/_base.scss */
 .block--services__item:hover .item,
 .block--services__item:hover span.icon {
   background: #fff;
@@ -356,7 +364,7 @@ section.margin__remove {
   transition: all 0.5s ease 0s;
 }
 
-/* line 177, src/sass/components/_base.scss */
+/* line 183, src/sass/components/_base.scss */
 .block--services__item:hover h3,
 .block--services__item:hover p {
   color: #fff;
@@ -365,13 +373,13 @@ section.margin__remove {
 }
 
 /* Portfolio */
-/* line 184, src/sass/components/_base.scss */
+/* line 190, src/sass/components/_base.scss */
 .portfolio--full__width {
   background: #002342;
   padding: 10rem 0 5rem 0;
 }
 
-/* line 189, src/sass/components/_base.scss */
+/* line 195, src/sass/components/_base.scss */
 .portfolio {
   max-width: 1920px;
   display: grid;
@@ -381,14 +389,14 @@ section.margin__remove {
   justify-items: center;
 }
 
-/* line 197, src/sass/components/_base.scss */
+/* line 203, src/sass/components/_base.scss */
 .portfolio div {
   padding: 3rem;
   border: 1px solid #dfdfdf;
   background: #f4f4f4;
 }
 
-/* line 202, src/sass/components/_base.scss */
+/* line 208, src/sass/components/_base.scss */
 .portfolio div div {
   padding: 1rem 0 2rem 2rem;
   border-top: none;
@@ -398,7 +406,7 @@ section.margin__remove {
   background: none;
 }
 
-/* line 212, src/sass/components/_base.scss */
+/* line 218, src/sass/components/_base.scss */
 .portfolio h3 {
   color: #d72f15;
   padding: 10px;
@@ -406,7 +414,7 @@ section.margin__remove {
   text-transform: uppercase;
 }
 
-/* line 219, src/sass/components/_base.scss */
+/* line 225, src/sass/components/_base.scss */
 .portfolio li {
   display: inline-block;
   padding: 10px;
@@ -414,12 +422,12 @@ section.margin__remove {
   margin-bottom: 1rem;
 }
 
-/* line 226, src/sass/components/_base.scss */
+/* line 232, src/sass/components/_base.scss */
 .portfolio img {
   border: 1px solid #dfdfdf;
 }
 
-/* line 230, src/sass/components/_base.scss */
+/* line 236, src/sass/components/_base.scss */
 .portfolio a {
   color: #d72f15;
   padding: 10px;
@@ -429,7 +437,6 @@ section.margin__remove {
 /* Header */
 /* line 3, src/sass/components/_header.scss */
 header {
-  height: auto;
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -437,9 +444,11 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px 1fr 50px 60px;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
-/* line 14, src/sass/components/_header.scss */
+/* line 15, src/sass/components/_header.scss */
 .hipster-dood,
 .hipster-chic,
 .divider,
@@ -447,12 +456,12 @@ header {
   display: none;
 }
 
-/* line 21, src/sass/components/_header.scss */
+/* line 22, src/sass/components/_header.scss */
 .img--logo {
   margin-bottom: 3rem;
 }
 
-/* line 25, src/sass/components/_header.scss */
+/* line 26, src/sass/components/_header.scss */
 .logo {
   grid-column: 1 / span 3;
   grid-row: 1 / span 4;
@@ -474,14 +483,14 @@ header {
   background: #d7614e;
 }
 
-/* line 36, src/sass/components/_header.scss */
+/* line 37, src/sass/components/_header.scss */
 .logo h1,
 .logo p {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 42, src/sass/components/_header.scss */
+/* line 43, src/sass/components/_header.scss */
 .logo h1 {
   color: #fff;
   font-size: 3rem;
@@ -489,13 +498,13 @@ header {
   text-shadow: 2px 2px 2px #000;
 }
 
-/* line 50, src/sass/components/_header.scss */
+/* line 51, src/sass/components/_header.scss */
 .logo p {
   color: #262525;
   font-size: 2rem;
 }
 
-/* line 56, src/sass/components/_header.scss */
+/* line 57, src/sass/components/_header.scss */
 h1 .fa-search {
   font-size: 2.4rem;
   color: #fff;
@@ -527,11 +536,9 @@ h1 .fa-search {
   }
   /* line 24, src/sass/components/_queries.scss */
   header {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 30, src/sass/components/_queries.scss */
+  /* line 28, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -539,7 +546,7 @@ h1 .fa-search {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 37, src/sass/components/_queries.scss */
+  /* line 35, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 1 / span 4;
@@ -554,11 +561,11 @@ h1 .fa-search {
             justify-content: center;
     background: #007d9f;
   }
-  /* line 46, src/sass/components/_queries.scss */
+  /* line 44, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
   }
-  /* line 50, src/sass/components/_queries.scss */
+  /* line 48, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 1 / span 4;
@@ -573,24 +580,65 @@ h1 .fa-search {
             justify-content: center;
     background: #d7614e;
   }
-  /* line 59, src/sass/components/_queries.scss */
+  /* line 57, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 65, src/sass/components/_queries.scss */
+  /* line 63, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 69, src/sass/components/_queries.scss */
+  /* line 67, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 71, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
+  }
+  /* line 75, src/sass/components/_queries.scss */
+  .services--head .container,
+  .portfolio--head .container {
+    width: 1240px;
+  }
+  /* line 80, src/sass/components/_queries.scss */
+  .right--margin {
+    margin: 0 0 0 auto;
+  }
+  /* line 84, src/sass/components/_queries.scss */
+  .left--margin {
+    margin: 0 auto 0 0;
+  }
+  /* line 88, src/sass/components/_queries.scss */
+  .services--head {
+    background-image: url("../img/img--background__linesLeft.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /* line 94, src/sass/components/_queries.scss */
+  .portfolio--head {
+    background-image: url("../img/img--background__linesRight.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /* line 100, src/sass/components/_queries.scss */
+  .services--head h2,
+  .services--head p {
+    text-align: right;
+    padding: 0;
+  }
+  /* line 106, src/sass/components/_queries.scss */
+  .portfolio--head h2,
+  .portfolio--head p {
+    text-align: left;
+    padding: 0;
+  }
+  /* line 112, src/sass/components/_queries.scss */
+  .section--head {
+    max-width: 600px;
   }
 }
 
@@ -2204,11 +2252,9 @@ footer .github:hover {
   }
   /* line 24, src/sass/components/_queries.scss */
   header {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     padding: 0;
   }
-  /* line 30, src/sass/components/_queries.scss */
+  /* line 28, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -2216,7 +2262,7 @@ footer .github:hover {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 37, src/sass/components/_queries.scss */
+  /* line 35, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 1;
     grid-row: 1 / span 4;
@@ -2231,11 +2277,11 @@ footer .github:hover {
             justify-content: center;
     background: #007d9f;
   }
-  /* line 46, src/sass/components/_queries.scss */
+  /* line 44, src/sass/components/_queries.scss */
   .logo {
     grid-column: 2;
   }
-  /* line 50, src/sass/components/_queries.scss */
+  /* line 48, src/sass/components/_queries.scss */
   .hipster-chic {
     grid-column: 3;
     grid-row: 1 / span 4;
@@ -2250,23 +2296,64 @@ footer .github:hover {
             justify-content: center;
     background: #d7614e;
   }
-  /* line 59, src/sass/components/_queries.scss */
+  /* line 57, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 65, src/sass/components/_queries.scss */
+  /* line 63, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 69, src/sass/components/_queries.scss */
+  /* line 67, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 71, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
+  }
+  /* line 75, src/sass/components/_queries.scss */
+  .services--head .container,
+  .portfolio--head .container {
+    width: 1240px;
+  }
+  /* line 80, src/sass/components/_queries.scss */
+  .right--margin {
+    margin: 0 0 0 auto;
+  }
+  /* line 84, src/sass/components/_queries.scss */
+  .left--margin {
+    margin: 0 auto 0 0;
+  }
+  /* line 88, src/sass/components/_queries.scss */
+  .services--head {
+    background-image: url("../img/img--background__linesLeft.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /* line 94, src/sass/components/_queries.scss */
+  .portfolio--head {
+    background-image: url("../img/img--background__linesRight.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /* line 100, src/sass/components/_queries.scss */
+  .services--head h2,
+  .services--head p {
+    text-align: right;
+    padding: 0;
+  }
+  /* line 106, src/sass/components/_queries.scss */
+  .portfolio--head h2,
+  .portfolio--head p {
+    text-align: left;
+    padding: 0;
+  }
+  /* line 112, src/sass/components/_queries.scss */
+  .section--head {
+    max-width: 600px;
   }
 }
