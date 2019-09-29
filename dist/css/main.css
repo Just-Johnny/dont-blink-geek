@@ -563,23 +563,16 @@ h1 .fa-search {
   }
   /* line 44, src/sass/components/_queries.scss */
   .logo {
-    grid-column: 2;
+    grid-column: 2 / span 3;
   }
-  /* line 48, src/sass/components/_queries.scss */
-  .hipster-chic {
-    grid-column: 3;
-    grid-row: 1 / span 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #d7614e;
-  }
+  /* .hipster-chic {
+        grid-column: 3;
+        grid-row: 1 / span 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #d7614e;
+    } */
   /* line 57, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
@@ -2279,23 +2272,16 @@ footer .github:hover {
   }
   /* line 44, src/sass/components/_queries.scss */
   .logo {
-    grid-column: 2;
+    grid-column: 2 / span 3;
   }
-  /* line 48, src/sass/components/_queries.scss */
-  .hipster-chic {
-    grid-column: 3;
-    grid-row: 1 / span 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #d7614e;
-  }
+  /* .hipster-chic {
+        grid-column: 3;
+        grid-row: 1 / span 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #d7614e;
+    } */
   /* line 57, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
