@@ -87,10 +87,9 @@
 
       </video>
       <div id="video_cover"></div>
-      <!-- <div id="overlay"></div> -->
       <section class="services">
         <div class="container">
-          <div class="block--services__list">
+          <div class="block--services__list" data-aos="flip-right">
             <div class="block--services__item"> <span class="icon feature_box_col_one"><i
                   class="fas fa-code"></i></span>
               <div class="block--services__text">
@@ -162,7 +161,7 @@
     </div>
   </div>
   <section class="portfolio">
-    <div>
+    <div data-aos="fade-right" data-aos-offset="600">
       <img src="/img/img--portfolio__tipler.jpg" class="img-responsive">
       <div>
         <h3>Features</h3>
@@ -175,7 +174,7 @@
         <a href="http://www.tipler.com/" target="_blank">Visit Website &raquo;</a>
       </div>
     </div>
-    <div>
+    <div data-aos="fade-left" data-aos-offset="600">
       <img src="/img/img--portfolio__bluewave.jpg" class="img-responsive">
       <div>
         <h3>Features</h3>
@@ -187,7 +186,7 @@
         <a href="https://www.bluewaveexpress.com/locations/" target="_blank">Visit Website &raquo;</a>
       </div>
     </div>
-    <div>
+    <div data-aos="fade-right" data-aos-offset="600">
       <img src="/img/img--portfolio__kenco.jpg" class="img-responsive">
       <div>
         <h3>Features</h3>
@@ -199,7 +198,7 @@
         <a href="https://www.highloads.com/" target="_blank">Visit Website &raquo;</a>
       </div>
     </div>
-    <div>
+    <div data-aos="fade-left" data-aos-offset="600">
       <img src="/img/img--portfolio__nexus.jpg" class="img-responsive">
       <div>
         <h3>Features</h3>
@@ -223,20 +222,20 @@
       </li>
       <li><a href="https://github.com/Just-Johnny/dont-blink-geek" target="_blank" class="github"><i
             class="fab fa-3x fa-github"></i></a></li>
+      <li><a href="https://dribbble.com/dontblinkgeek" target="_blank" class="dribbble"><i
+            class="fab fa-3x fa-dribbble"></i></a></li>
     </ul>
     <p>John Burks, Don't Blink Geek &copy;2019</p>
 
   </footer>
 
   <!-- Scripts -->
+  <script src="/js/main.js"></script>
   <script>
-    window.addEventListener("load", function () {
-      const script = document.createElement("script");
-      script.src = "/js/main.js";
-      document.body.appendChild(script);
+    AOS.init({
+      disable: 'mobile'
     });
   </script>
-  <!-- <script src="/js/main.js"></script> -->
 </body>
 
 </html>

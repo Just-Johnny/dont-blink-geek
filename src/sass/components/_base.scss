@@ -111,32 +111,43 @@ section.margin__remove {
 	text-align: center;
 	padding: 30px 25px;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-	// border-radius: 10px;
 	transition: all 0.5s ease 0;
-}
 
-.block--services__list .block--services__item:nth-child(even) {
-	background: #007d9f;
-}
+	&:nth-child(even) {
+		background: #007d9f;
+		background: linear-gradient(135deg, #007d9f 0%, #004f9f 100%);
+	}
 
-.block--services__list .block--services__item:nth-child(odd) {
-	background: #d7614e;
-}
+	&:nth-child(odd) {
+		background: #d61c00;
+		background: linear-gradient(135deg, #d61c00 0%, #d65c00 100%);
+	}
 
-.block--services__item span {
-	display: inline-block;
-	text-decoration: none;
-	color: inherit;
-}
+	&:nth-child(even):hover {
+		background: #007d9f;
+		background: linear-gradient(135deg, #004f9f 0%, #007d9f 100%);
+	}
 
-.block--services__item .icon {
-	font-size: 4rem;
-	margin-bottom: 2.5rem;
-	color: #d72f15;
-	width: 90px;
-	height: 90px;
-	line-height: 96px;
-	border-radius: 50px;
+	&:nth-child(odd):hover {
+		background: #d61c00;
+		background: linear-gradient(135deg, #d65c00 0%, #d61c00 100%);
+	}
+
+	span {
+		display: inline-block;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.icon {
+		font-size: 4rem;
+		margin-bottom: 2.5rem;
+		color: #d72f15;
+		width: 90px;
+		height: 90px;
+		line-height: 96px;
+		border-radius: 50px;
+	}
 }
 
 .block--services__item .feature_box_col_one,
@@ -154,22 +165,21 @@ section.margin__remove {
 	padding: 15px;
 	border-radius: 10px;
 	min-height: 148px;
-}
 
-.block--services__item h3 {
-	font-size: 3rem;
-	margin-bottom: 20px;
-	line-height: normal;
-}
+	h3 {
+		font-size: 3rem;
+		margin-bottom: 20px;
+		line-height: normal;
+	}
 
-.block--services__item p {
-	font-size: 1.8rem;
-	line-height: normal;
+	p {
+		font-size: 1.8rem;
+		line-height: normal;
+	}
 }
 
 .block--services__item:hover {
 	background: #d72f15;
-	box-shadow: none;
 	transition: all 0.5s ease 0s;
 }
 
@@ -177,12 +187,6 @@ section.margin__remove {
 .block--services__item:hover span.icon {
 	background: #fff;
 	border-radius: 10px;
-	transition: all 0.5s ease 0s;
-}
-
-.block--services__item:hover h3,
-.block--services__item:hover p {
-	color: #fff;
 	transition: all 0.5s ease 0s;
 }
 
