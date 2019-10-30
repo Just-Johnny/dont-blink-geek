@@ -23,8 +23,8 @@ This is my personal website but feel free to use this as a starting point for yo
 
 If you have questions or encounter any bugs, please leave a comment in the Issues section of the project. I will do my best to respond. However, I cannot provide assistance in setting up your work station if this is your first time using npm. There are plenty of resources already available online.
 
-[Buy the video here.](https://videohive.net/item/space-galaxy-/11419190)
-[Buy the Hipster Dude here.](https://graphicriver.net/item/hipster-character-pack/9863942)
+- [Buy the video here.](https://videohive.net/item/space-galaxy-/11419190)
+- [Buy the Hipster Dude here.](https://graphicriver.net/item/hipster-character-pack/9863942)
 
 ## Getting Started
 
