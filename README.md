@@ -19,9 +19,12 @@ Node.js, npm, Gulp 4.x
 
 The original starter files can be found at [https://travis-ci.org/cferdinandi/gulp-boilerplate](https://travis-ci.org/cferdinandi/gulp-boilerplate). However, I have made changes to fit my personal preferences and needs.
 
-This is my personal website but feel free to use this as a starting point for your own. You are free to copy the assets over and reuse everything with the exception of the logo and image files. If you're wondering why I don't .gitignore those files, it's due to the fact the host I use is directly referencing the files.
+This is my personal website but feel free to use this as a starting point for your own. You are free to copy the assets over and reuse everything with the exception of the logo, image files and video. If you're wondering why I don't .gitignore those files, it's due to the fact the host I use is directly referencing the files.
 
 If you have questions or encounter any bugs, please leave a comment in the Issues section of the project. I will do my best to respond. However, I cannot provide assistance in setting up your work station if this is your first time using npm. There are plenty of resources already available online.
+
+[Buy the video here.](https://videohive.net/item/space-galaxy-/11419190)
+[Buy the Hipster Dude here.](https://graphicriver.net/item/hipster-character-pack/9863942)
 
 ## Getting Started
 
