@@ -32,17 +32,19 @@
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
+
     .hipster-dood {
-        grid-column: 1;
-        grid-row: 1 / span 4;
+        grid-column: 3;
         display: flex;
         align-items: center;
         justify-content: center;
         background: #007d9f;
+        grid-row: 1 / span 4;
     }
 
     .logo {
-        grid-column: 2 / span 3;
+        grid-column: 1 / span 2;
+
     }
 
     /* .hipster-chic {
@@ -85,7 +87,7 @@
         margin: 0 auto 0 0;
     }
 
-    .services--head {
+    /* .services--head {
         background-image: url('../img/img--background__linesLeft.png');
         background-repeat: no-repeat;
         background-position: center center;
@@ -95,7 +97,7 @@
         background-image: url('../img/img--background__linesRight.png');
         background-repeat: no-repeat;
         background-position: center center;
-    }
+    } */
 
     .services--head h2,
     .services--head p {
@@ -109,8 +111,8 @@
         padding: 0;
     }
 
-    .section--head {
+    /* .section--head {
         max-width: 600px;
 
-    }
+    } */
 }

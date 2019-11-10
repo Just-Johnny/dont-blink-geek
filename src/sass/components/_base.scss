@@ -15,7 +15,8 @@ p,
 ul,
 ol,
 input,
-label {
+label,
+textarea {
 	font-family: 'Fira Code', monospace;
 }
 
@@ -57,7 +58,8 @@ section.margin__remove {
 	background-image: none;
 }
 
-.section--head {
+.section--head,
+.services--head {
 
 	h2,
 	p {
@@ -83,19 +85,134 @@ section.margin__remove {
 	}
 }
 
-.container,
-.container--full__width {}
-
 /* Page Content */
 
-.section--head {
+.right--margin,
+.left--margin {
 	padding: 8rem 0;
 }
 
-/* Service Blocks */
+/* Header */
 
+header {
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 50px 1fr 50px 60px;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+.services--head {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.hipster-dood,
+.hipster-chic,
+.divider,
+.divider--alt {
+	display: none;
+}
+
+.img--logo {
+	margin-bottom: 3rem;
+}
+
+.logo,
+.intro--container {
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+	flex-direction: column;
+	padding: 50px;
+	background: #d7614e;
+
+	h1,
+	p {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 3rem;
+		padding-top: 0;
+		text-shadow: 2px 2px 2px #000;
+	}
+
+	p {
+		color: #262525;
+		font-size: 2rem;
+	}
+}
+
+h1 .fa-search {
+	font-size: 2.4rem;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+
+/* Video */
+.video--wrapper {
+	position: relative;
+	height: 2600px;
+	width: 100vw;
+}
+
+#background_video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	height: 2600px;
+	width: 100%;
+}
+
+#containerv {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+}
+
+#video_cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #007d9f;
+	background-size: cover;
+	background-position: center;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Service Blocks */
 .services {
+	z-index: 2;
+	position: relative;
+	display: inline-block;
+	top: 50%;
 	padding: 8rem 0;
+	transform: translateY(-50%);
 }
 
 .block--services__list {
@@ -203,6 +320,7 @@ section.margin__remove {
 	grid-gap: 0;
 	grid-auto-flow: row;
 	justify-items: center;
+	background: #EBCAB9;
 
 	div {
 		padding: 3rem;
@@ -242,4 +360,81 @@ section.margin__remove {
 		padding: 10px;
 		text-decoration: none;
 	}
+}
+
+/* Footer */
+footer {
+	background: #007d9f;
+	padding-bottom: 20px;
+
+	h3,
+	p,
+	li a {
+		color: #fff;
+	}
+
+	h3,
+	p,
+	ul {
+		text-align: center;
+
+	}
+
+	h3,
+	p {
+		padding-top: 20px;
+
+	}
+
+	h3 {
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 1.5rem;
+		font-family: 'Fira Code', monospace;
+	}
+
+	ul {
+		width: 100%;
+		margin-top: 20px;
+		padding-left: 0px;
+	}
+
+	li {
+		display: inline-block;
+		margin: 4px;
+	}
+
+	li a {
+		display: block;
+		text-decoration: none;
+		border-bottom: medium none;
+		padding: 10px;
+		border-radius: 10px;
+		transition: all 0.3s ease-in 0s, all 1s ease 0s;
+		background: #444749;
+	}
+}
+
+footer .email:hover {
+	background-color: #d72f15;
+}
+
+footer .linkedin:hover {
+	background-color: #006db3;
+}
+
+footer .codepen:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+footer .github:hover {
+	background-color: #2ebc4f;
+}
+
+footer .dribbble:hover {
+	background-color: #c32361;
 }
