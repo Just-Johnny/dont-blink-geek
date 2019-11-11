@@ -365,6 +365,7 @@ h1 .fa-search {
 
 /* line 170, src/sass/components/_base.scss */
 #background_video {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -376,7 +377,7 @@ h1 .fa-search {
   width: 100%;
 }
 
-/* line 180, src/sass/components/_base.scss */
+/* line 181, src/sass/components/_base.scss */
 #containerv {
   overflow: hidden;
   position: absolute;
@@ -385,9 +386,10 @@ h1 .fa-search {
   right: 0;
   bottom: 0;
   height: 100%;
+  background: #ebcab9;
 }
 
-/* line 190, src/sass/components/_base.scss */
+/* line 192, src/sass/components/_base.scss */
 #video_cover {
   position: absolute;
   width: 100%;
@@ -397,7 +399,7 @@ h1 .fa-search {
   background-position: center;
 }
 
-/* line 199, src/sass/components/_base.scss */
+/* line 201, src/sass/components/_base.scss */
 #overlay {
   position: absolute;
   top: 0;
@@ -408,7 +410,7 @@ h1 .fa-search {
 }
 
 /* Service Blocks */
-/* line 209, src/sass/components/_base.scss */
+/* line 211, src/sass/components/_base.scss */
 .services {
   z-index: 2;
   position: relative;
@@ -419,7 +421,7 @@ h1 .fa-search {
           transform: translateY(-50%);
 }
 
-/* line 218, src/sass/components/_base.scss */
+/* line 220, src/sass/components/_base.scss */
 .block--services__list {
   display: grid;
   grid-template: repeat(6, auto)/repeat(1, 1fr);
@@ -427,7 +429,7 @@ h1 .fa-search {
   padding: 0 10px;
 }
 
-/* line 225, src/sass/components/_base.scss */
+/* line 227, src/sass/components/_base.scss */
 .block--services__item {
   background: #fff;
   color: #fff;
@@ -439,38 +441,38 @@ h1 .fa-search {
   transition: all 0.5s ease 0;
 }
 
-/* line 233, src/sass/components/_base.scss */
+/* line 235, src/sass/components/_base.scss */
 .block--services__item:nth-child(even) {
   background: #007d9f;
   background: linear-gradient(135deg, #007d9f 0%, #004f9f 100%);
 }
 
-/* line 238, src/sass/components/_base.scss */
+/* line 240, src/sass/components/_base.scss */
 .block--services__item:nth-child(odd) {
   background: #d61c00;
   background: linear-gradient(135deg, #d61c00 0%, #d65c00 100%);
 }
 
-/* line 243, src/sass/components/_base.scss */
+/* line 245, src/sass/components/_base.scss */
 .block--services__item:nth-child(even):hover {
   background: #007d9f;
   background: linear-gradient(135deg, #004f9f 0%, #007d9f 100%);
 }
 
-/* line 248, src/sass/components/_base.scss */
+/* line 250, src/sass/components/_base.scss */
 .block--services__item:nth-child(odd):hover {
   background: #d61c00;
   background: linear-gradient(135deg, #d65c00 0%, #d61c00 100%);
 }
 
-/* line 253, src/sass/components/_base.scss */
+/* line 255, src/sass/components/_base.scss */
 .block--services__item span {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
-/* line 259, src/sass/components/_base.scss */
+/* line 261, src/sass/components/_base.scss */
 .block--services__item .icon {
   font-size: 4rem;
   margin-bottom: 2.5rem;
@@ -481,7 +483,7 @@ h1 .fa-search {
   border-radius: 50px;
 }
 
-/* line 270, src/sass/components/_base.scss */
+/* line 272, src/sass/components/_base.scss */
 .block--services__item .feature_box_col_one,
 .block--services__item .feature_box_col_two,
 .block--services__item .feature_box_col_three,
@@ -492,7 +494,7 @@ h1 .fa-search {
   color: #d72f15;
 }
 
-/* line 280, src/sass/components/_base.scss */
+/* line 282, src/sass/components/_base.scss */
 .block--services__text {
   background: #002342;
   padding: 15px;
@@ -500,27 +502,27 @@ h1 .fa-search {
   min-height: 148px;
 }
 
-/* line 286, src/sass/components/_base.scss */
+/* line 288, src/sass/components/_base.scss */
 .block--services__text h3 {
   font-size: 3rem;
   margin-bottom: 20px;
   line-height: normal;
 }
 
-/* line 292, src/sass/components/_base.scss */
+/* line 294, src/sass/components/_base.scss */
 .block--services__text p {
   font-size: 1.8rem;
   line-height: normal;
 }
 
-/* line 298, src/sass/components/_base.scss */
+/* line 300, src/sass/components/_base.scss */
 .block--services__item:hover {
   background: #d72f15;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
-/* line 303, src/sass/components/_base.scss */
+/* line 305, src/sass/components/_base.scss */
 .block--services__item:hover .item,
 .block--services__item:hover span.icon {
   background: #fff;
@@ -530,13 +532,13 @@ h1 .fa-search {
 }
 
 /* Portfolio */
-/* line 311, src/sass/components/_base.scss */
+/* line 313, src/sass/components/_base.scss */
 .portfolio--full__width {
   background: #002342;
   padding: 10rem 0 5rem 0;
 }
 
-/* line 316, src/sass/components/_base.scss */
+/* line 318, src/sass/components/_base.scss */
 .portfolio {
   max-width: 1920px;
   display: grid;
@@ -547,14 +549,14 @@ h1 .fa-search {
   background: #EBCAB9;
 }
 
-/* line 325, src/sass/components/_base.scss */
+/* line 327, src/sass/components/_base.scss */
 .portfolio div {
   padding: 3rem;
   border: 1px solid #dfdfdf;
   background: #f4f4f4;
 }
 
-/* line 330, src/sass/components/_base.scss */
+/* line 332, src/sass/components/_base.scss */
 .portfolio div div {
   padding: 1rem 0 2rem 2rem;
   border-top: none;
@@ -564,7 +566,7 @@ h1 .fa-search {
   background: none;
 }
 
-/* line 340, src/sass/components/_base.scss */
+/* line 342, src/sass/components/_base.scss */
 .portfolio h3 {
   color: #d72f15;
   padding: 10px;
@@ -572,7 +574,13 @@ h1 .fa-search {
   text-transform: uppercase;
 }
 
-/* line 347, src/sass/components/_base.scss */
+/* line 348, src/sass/components/_base.scss */
+.portfolio h3 span {
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+}
+
+/* line 354, src/sass/components/_base.scss */
 .portfolio li {
   display: inline-block;
   padding: 10px;
@@ -580,12 +588,12 @@ h1 .fa-search {
   margin-bottom: 1rem;
 }
 
-/* line 354, src/sass/components/_base.scss */
+/* line 361, src/sass/components/_base.scss */
 .portfolio img {
   border: 1px solid #dfdfdf;
 }
 
-/* line 358, src/sass/components/_base.scss */
+/* line 365, src/sass/components/_base.scss */
 .portfolio a {
   color: #d72f15;
   padding: 10px;
@@ -593,58 +601,58 @@ h1 .fa-search {
 }
 
 /* Footer */
-/* line 366, src/sass/components/_base.scss */
+/* line 373, src/sass/components/_base.scss */
 footer {
   background: #007d9f;
   padding-bottom: 20px;
 }
 
-/* line 370, src/sass/components/_base.scss */
+/* line 377, src/sass/components/_base.scss */
 footer h3,
 footer p,
 footer li a {
   color: #fff;
 }
 
-/* line 376, src/sass/components/_base.scss */
+/* line 383, src/sass/components/_base.scss */
 footer h3,
 footer p,
 footer ul {
   text-align: center;
 }
 
-/* line 383, src/sass/components/_base.scss */
+/* line 390, src/sass/components/_base.scss */
 footer h3,
 footer p {
   padding-top: 20px;
 }
 
-/* line 389, src/sass/components/_base.scss */
+/* line 396, src/sass/components/_base.scss */
 footer h3 {
   font-size: 2rem;
   text-transform: uppercase;
 }
 
-/* line 394, src/sass/components/_base.scss */
+/* line 401, src/sass/components/_base.scss */
 footer p {
   font-size: 1.5rem;
   font-family: 'Fira Code', monospace;
 }
 
-/* line 399, src/sass/components/_base.scss */
+/* line 406, src/sass/components/_base.scss */
 footer ul {
   width: 100%;
   margin-top: 20px;
   padding-left: 0px;
 }
 
-/* line 405, src/sass/components/_base.scss */
+/* line 412, src/sass/components/_base.scss */
 footer li {
   display: inline-block;
   margin: 4px;
 }
 
-/* line 410, src/sass/components/_base.scss */
+/* line 417, src/sass/components/_base.scss */
 footer li a {
   display: block;
   text-decoration: none;
@@ -656,28 +664,28 @@ footer li a {
   background: #444749;
 }
 
-/* line 421, src/sass/components/_base.scss */
+/* line 428, src/sass/components/_base.scss */
 footer .email:hover {
   background-color: #d72f15;
 }
 
-/* line 425, src/sass/components/_base.scss */
+/* line 432, src/sass/components/_base.scss */
 footer .linkedin:hover {
   background-color: #006db3;
 }
 
-/* line 429, src/sass/components/_base.scss */
+/* line 436, src/sass/components/_base.scss */
 footer .codepen:hover {
   color: #000;
   background-color: #fff;
 }
 
-/* line 434, src/sass/components/_base.scss */
+/* line 441, src/sass/components/_base.scss */
 footer .github:hover {
   background-color: #2ebc4f;
 }
 
-/* line 438, src/sass/components/_base.scss */
+/* line 445, src/sass/components/_base.scss */
 footer .dribbble:hover {
   background-color: #c32361;
 }
@@ -2132,20 +2140,21 @@ footer .dribbble:hover {
   /* line 12, src/sass/components/_queries.scss */
   #background_video {
     height: 1300px;
+    display: inline;
   }
-  /* line 16, src/sass/components/_queries.scss */
+  /* line 17, src/sass/components/_queries.scss */
   .logo h1 {
     font-size: 6rem;
   }
-  /* line 20, src/sass/components/_queries.scss */
+  /* line 21, src/sass/components/_queries.scss */
   h1 .fa-search {
     font-size: 4.4rem;
   }
-  /* line 24, src/sass/components/_queries.scss */
+  /* line 25, src/sass/components/_queries.scss */
   header {
     padding: 0;
   }
-  /* line 28, src/sass/components/_queries.scss */
+  /* line 29, src/sass/components/_queries.scss */
   .block--services__item h3 {
     font-size: 2rem;
   }
@@ -2153,7 +2162,7 @@ footer .dribbble:hover {
 
 /* 1024 and up */
 @media screen and (min-width: 1023px) {
-  /* line 36, src/sass/components/_queries.scss */
+  /* line 37, src/sass/components/_queries.scss */
   .hipster-dood {
     grid-column: 3;
     display: -webkit-box;
@@ -2168,7 +2177,7 @@ footer .dribbble:hover {
     background: #007d9f;
     grid-row: 1 / span 4;
   }
-  /* line 45, src/sass/components/_queries.scss */
+  /* line 46, src/sass/components/_queries.scss */
   .logo {
     grid-column: 1 / span 2;
   }
@@ -2180,35 +2189,35 @@ footer .dribbble:hover {
         justify-content: center;
         background: #d7614e;
     } */
-  /* line 59, src/sass/components/_queries.scss */
+  /* line 60, src/sass/components/_queries.scss */
   .portfolio {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1383px) {
-  /* line 65, src/sass/components/_queries.scss */
+  /* line 66, src/sass/components/_queries.scss */
   .block--services__list {
     grid-template: repeat(2, auto)/repeat(3, 1fr);
   }
-  /* line 69, src/sass/components/_queries.scss */
+  /* line 70, src/sass/components/_queries.scss */
   .video--wrapper {
     height: 100vh;
   }
-  /* line 73, src/sass/components/_queries.scss */
+  /* line 74, src/sass/components/_queries.scss */
   #background_video {
     height: 100vh;
   }
-  /* line 77, src/sass/components/_queries.scss */
+  /* line 78, src/sass/components/_queries.scss */
   .services--head .container,
   .portfolio--head .container {
     width: 1240px;
   }
-  /* line 82, src/sass/components/_queries.scss */
+  /* line 83, src/sass/components/_queries.scss */
   .right--margin {
     margin: 0 0 0 auto;
   }
-  /* line 86, src/sass/components/_queries.scss */
+  /* line 87, src/sass/components/_queries.scss */
   .left--margin {
     margin: 0 auto 0 0;
   }
@@ -2223,13 +2232,13 @@ footer .dribbble:hover {
         background-repeat: no-repeat;
         background-position: center center;
     } */
-  /* line 102, src/sass/components/_queries.scss */
+  /* line 103, src/sass/components/_queries.scss */
   .services--head h2,
   .services--head p {
     text-align: right;
     padding: 0;
   }
-  /* line 108, src/sass/components/_queries.scss */
+  /* line 109, src/sass/components/_queries.scss */
   .portfolio--head h2,
   .portfolio--head p {
     text-align: left;
